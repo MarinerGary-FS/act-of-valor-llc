@@ -111,3 +111,44 @@ The current Act of Valor site contains several strategically important sections.
   - emergency CTA
 - All icons and links must be live, accurate, and consistent across the site.
 - Contact information should be centralized so edits propagate sitewide.
+
+## SEO Requirements (High Priority)
+
+This site must be built with strong local SEO foundations.
+
+### Technical SEO
+- Unique title tags and meta descriptions for each major page
+- Proper heading hierarchy (H1, H2, H3)
+- Clean semantic HTML
+- Internal linking between services, locations, and resources
+- Fast load speed
+- Mobile-first performance
+- Descriptive alt text on all important images
+- Open Graph and social sharing metadata
+- XML sitemap and robots.txt ready
+- Canonical tags where appropriate
+
+### Local SEO
+- Strong Atlanta metro targeting throughout the site
+- Service + location combinations where appropriate
+- Dedicated location language for:
+  - Atlanta
+  - Sandy Springs
+  - Marietta
+  - Douglasville
+  - Buckhead
+  - other relevant nearby areas
+- Prominent NAP consistency (name, address if used, phone)
+- Clear service area references
+- LocalBusiness / ProfessionalService schema markup
+- Review/testimonial structure that supports trust and local relevance
+
+### Content SEO
+- Build content around high-intent searches related to:
+  - mold remediation
+  - water damage cleanup
+  - trauma / biohazard cleanup
+  - fire damage restoration
+  - emergency restoration in Atlanta
+- Include FAQ sections where useful
+- Use trust-building educational content without weakening conversion
