@@ -64,3 +64,50 @@ Atlanta Metro Area (include nearby cities)
 - Acknowledge distress
 - Provide immediate reassurance
 - Offer clear next steps
+
+## Existing-Site Elements That Must Be Preserved and Improved
+
+The current Act of Valor site contains several strategically important sections. Do NOT remove these in the redesign. Rebuild them at a higher level.
+
+### 1. Credentials / Certifications
+- Preserve the credentials section near the bottom of the homepage.
+- Present certifications as a polished trust module, not a throwaway image strip.
+- Display each credential clearly with:
+  - official name
+  - issuing organization
+  - logo/image
+  - alt text
+- Support adding new credentials easily.
+- This section is a major trust signal and should reinforce compliance, professionalism, and authority.
+
+### 2. Resources & Links
+- Preserve a curated resources section.
+- Rework it to support topical authority and SEO.
+- Prioritize links relevant to:
+  - weather alerts
+  - emergency preparedness
+  - Georgia / Atlanta public safety
+  - mold and water damage education
+  - insurance claims guidance
+  - law enforcement and sheriff resources
+- Remove or deprioritize links that do not support restoration, emergency response, public safety, or local relevance.
+- Organize resources into categories if helpful.
+
+### 3. Local Crime / Public Safety Updates
+- Preserve the current crime/news update concept.
+- Refocus it from broad U.S. crime news to Atlanta metro / Georgia public safety relevance where possible.
+- The module should feel credible, local, and useful.
+- Design it as a live-updates or recent-alerts section without making the homepage feel cluttered.
+- This supports both trust and local topical relevance.
+
+### 4. Footer, Social, and Contact Integrity
+- Audit and preserve all current contact details and social links.
+- Ensure the footer includes:
+  - phone number
+  - email
+  - service area
+  - social links
+  - quick navigation
+  - emergency CTA
+- All icons and links must be live, accurate, and consistent across the site.
+- Contact information should be centralized so edits propagate sitewide.
