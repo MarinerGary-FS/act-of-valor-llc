@@ -1,65 +1,57 @@
 # Components — Act of Valor
 
-## 1. Hero Section
-
+## Hero Section
 - Headline
 - Subtext
 - Trust line
-- Primary CTA (Call Now)
-- Secondary CTA (Form)
+- Call CTA
+- Form CTA
 
 ---
 
-## 2. Service Cards (Interactive)
-
-Each card includes:
-- Problem-based headline
+## Service Cards
+Each includes:
+- Problem headline
 - Immediate action guidance
-- What we do (short bullets)
+- What we do
 - CTA
 
-Hover effect:
-- Slight lift + shadow
+---
+
+## Credentials Section (ENHANCED)
+- Grid layout
+- Clearly labeled certifications
+- Visual + textual reinforcement
+- Premium styling
 
 ---
 
-## 3. Trust Section
-
-Title: "Why Atlanta Trusts Act of Valor"
-
-Include:
-- Law enforcement relationships
-- Compassionate approach
-- Certifications
-- Testimonials
+## Resources Section (STRUCTURED)
+- Categorized links
+- SEO-friendly structure
+- Clean layout
 
 ---
 
-## 4. CTA Blocks
-
-Repeated throughout site:
-
-Examples:
-- "Get Immediate Help"
-- "Request Same-Day Service"
+## Public Safety Updates Section
+- Local updates (Atlanta-focused)
+- Simple feed layout
 
 ---
 
-## 5. Local Area Section
-
-List:
-- Atlanta
-- Sandy Springs
-- Marietta
-- Douglasville
-- Buckhead
+## Trust Section
+"Why Atlanta Trusts Act of Valor"
 
 ---
 
-## 6. Footer
+## CTA Blocks
+Repeated across site
 
-Include:
-- Phone number
-- Service list
+---
+
+## Footer
+- Phone
+- Social
 - Locations
-- Quick contact CTA
+- Navigation
+- CTA
