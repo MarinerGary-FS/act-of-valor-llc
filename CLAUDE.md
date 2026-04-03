@@ -3,17 +3,18 @@
 You are building a high-conversion emergency restoration website for Act of Valor.
 
 ## Core Objective
-This is NOT a typical website. This is a crisis-response conversion system.
+This is NOT a standard website.
+This is a crisis-response conversion system designed to generate immediate calls and leads.
 
-Users visiting this site are:
+Users are:
 - In distress
 - Time-sensitive
 - Not browsing casually
 
-Your job is to:
+Your job:
 - Reduce panic
 - Provide clarity
-- Drive immediate action (call or form submission)
+- Drive immediate action
 
 ---
 
@@ -26,129 +27,107 @@ Act of Valor is:
 
 Tone:
 - Calm, confident, human
-- Never overly corporate
-- Never aggressive or salesy
+- Reassuring, not salesy
+- Authority without arrogance
 
 ---
 
-## Primary Conversion Goals
-1. Phone calls (highest priority)
+## NON-NEGOTIABLE: EXISTING SITE ELEMENTS TO PRESERVE & UPGRADE
+
+### 1. Credentials / Certifications (HIGH PRIORITY)
+- Preserve and elevate the credentials section from the current site
+- Present as a premium trust module (not just logos)
+- Each credential must include:
+  - Name
+  - Issuing organization
+  - Logo/image
+  - Alt text for SEO
+- Support adding new credentials easily
+- This is a PRIMARY trust driver
+
+---
+
+### 2. Resources & Links (SEO CRITICAL)
+- Preserve the concept but improve structure and relevance
+- Organize into categories:
+
+Required categories:
+- Weather & Storm Tracking
+- Atlanta / Georgia Public Safety
+- Emergency Preparedness
+- Insurance & Claims Guidance
+- Restoration Education (mold, water, fire, biohazard)
+
+- Remove irrelevant links
+- Add descriptive anchor text
+- This section must support SEO authority and local relevance
+
+---
+
+### 3. Local Crime / Public Safety Updates
+- Preserve the existing crime/news concept
+- REFOCUS to Atlanta metro / Georgia (not national)
+
+Rename section to:
+"Atlanta Public Safety Updates"
+
+- Display recent, relevant updates
+- Must feel local, credible, and useful
+- Do not overwhelm the homepage
+
+---
+
+### 4. Footer, Social, and Contact Integrity
+- Preserve ALL contact information and social links
+- Ensure:
+  - Phone number is correct and clickable
+  - Social icons are accurate and working
+  - Email (if present) is correct
+- Footer must include:
+  - Phone
+  - Service areas
+  - Quick navigation
+  - CTA
+- Contact data must be centralized and consistent sitewide
+
+---
+
+## PRIMARY CONVERSION GOALS
+1. Phone calls (top priority)
 2. Form submissions
 3. Chat engagement
 
 ---
 
-## UX Rules (Non-Negotiable)
-- Phone number always visible (sticky header)
+## UX RULES (STRICT)
+- Sticky phone number header
 - CTA every 1–2 sections
 - Mobile-first design
 - Large tap targets
-- Minimal cognitive load
-
----
-
-## Service Priority Order
-1. Mold Remediation
-2. Water Damage
-3. Trauma / Biohazard Cleanup
-4. Fire Damage
-
----
-
-## Location Focus
-Atlanta Metro Area (include nearby cities)
-
----
-
-## Emotional Strategy
-- Acknowledge distress
-- Provide immediate reassurance
-- Offer clear next steps
-
-## Existing-Site Elements That Must Be Preserved and Improved
-
-The current Act of Valor site contains several strategically important sections. Do NOT remove these in the redesign. Rebuild them at a higher level.
-
-### 1. Credentials / Certifications
-- Preserve the credentials section near the bottom of the homepage.
-- Present certifications as a polished trust module, not a throwaway image strip.
-- Display each credential clearly with:
-  - official name
-  - issuing organization
-  - logo/image
-  - alt text
-- Support adding new credentials easily.
-- This section is a major trust signal and should reinforce compliance, professionalism, and authority.
-
-### 2. Resources & Links
-- Preserve a curated resources section.
-- Rework it to support topical authority and SEO.
-- Prioritize links relevant to:
-  - weather alerts
-  - emergency preparedness
-  - Georgia / Atlanta public safety
-  - mold and water damage education
-  - insurance claims guidance
-  - law enforcement and sheriff resources
-- Remove or deprioritize links that do not support restoration, emergency response, public safety, or local relevance.
-- Organize resources into categories if helpful.
-
-### 3. Local Crime / Public Safety Updates
-- Preserve the current crime/news update concept.
-- Refocus it from broad U.S. crime news to Atlanta metro / Georgia public safety relevance where possible.
-- The module should feel credible, local, and useful.
-- Design it as a live-updates or recent-alerts section without making the homepage feel cluttered.
-- This supports both trust and local topical relevance.
-
-### 4. Footer, Social, and Contact Integrity
-- Audit and preserve all current contact details and social links.
-- Ensure the footer includes:
-  - phone number
-  - email
-  - service area
-  - social links
-  - quick navigation
-  - emergency CTA
-- All icons and links must be live, accurate, and consistent across the site.
-- Contact information should be centralized so edits propagate sitewide.
-
-## SEO Requirements (High Priority)
-
-This site must be built with strong local SEO foundations.
-
-### Technical SEO
-- Unique title tags and meta descriptions for each major page
-- Proper heading hierarchy (H1, H2, H3)
-- Clean semantic HTML
-- Internal linking between services, locations, and resources
 - Fast load speed
-- Mobile-first performance
-- Descriptive alt text on all important images
-- Open Graph and social sharing metadata
-- XML sitemap and robots.txt ready
-- Canonical tags where appropriate
+- Minimal friction
 
-### Local SEO
-- Strong Atlanta metro targeting throughout the site
-- Service + location combinations where appropriate
-- Dedicated location language for:
-  - Atlanta
-  - Sandy Springs
-  - Marietta
-  - Douglasville
-  - Buckhead
-  - other relevant nearby areas
-- Prominent NAP consistency (name, address if used, phone)
-- Clear service area references
-- LocalBusiness / ProfessionalService schema markup
-- Review/testimonial structure that supports trust and local relevance
+---
 
-### Content SEO
-- Build content around high-intent searches related to:
-  - mold remediation
-  - water damage cleanup
-  - trauma / biohazard cleanup
-  - fire damage restoration
-  - emergency restoration in Atlanta
-- Include FAQ sections where useful
-- Use trust-building educational content without weakening conversion
+## SERVICE PRIORITY
+1. Mold
+2. Water
+3. Trauma / Biohazard
+4. Fire
+
+---
+
+## LOCATION FOCUS
+Atlanta Metro Area:
+- Atlanta
+- Sandy Springs
+- Marietta
+- Douglasville
+- Buckhead
+
+---
+
+## EMOTIONAL STRATEGY
+- Acknowledge urgency
+- Provide reassurance
+- Guide next step immediately
