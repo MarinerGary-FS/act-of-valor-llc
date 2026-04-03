@@ -1,62 +1,64 @@
 # Conversion Logic — Act of Valor
 
-## Primary Behavior
-
-User lands → must take action within 10–30 seconds
+## Core Behavior
+User must be guided to action within 10–30 seconds.
 
 ---
 
-## CTA Placement
-
+## CTA STRUCTURE
 - Hero (top)
-- After services
+- After each service block
 - After trust section
 - Footer
 
 ---
 
-## Phone Priority
-
-- Sticky header
-- Click-to-call everywhere
+## PHONE DOMINANCE
+- Sticky header with click-to-call
+- Visible at all times
+- Mobile optimized
 
 ---
 
-## Form Strategy
-
-Short form only:
+## FORM STRATEGY
+Fields:
 - Name
 - Phone
 - What happened
 - Location
 
+Short, fast, frictionless
+
 ---
 
-## Automation Flow
+## AUTOMATION FLOW
 
-On form submit:
+On submission:
 
-1. Instant SMS:
+1. SMS:
 "Act of Valor here. We received your request—are you safe right now?"
 
-2. Internal notification
+2. Internal alert to team
 
 3. Optional auto-call trigger
 
 ---
 
-## Chat Flow
-
-Questions:
+## CHAT FLOW
 - What happened?
 - Where are you located?
-- Is this urgent?
+- Is anyone in danger?
 
 ---
 
-## Psychological Triggers
+## TRUST INJECTION POINTS
+- Credentials section (strongest)
+- Law enforcement relationships
+- Testimonials
+- Local presence
 
-- Reassurance
-- Authority
-- Simplicity
-- Speed
+---
+
+## SEO INTEGRATION
+- Internal links from services → resources → locations
+- Use resources section to reinforce authority
