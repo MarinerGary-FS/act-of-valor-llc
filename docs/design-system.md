@@ -2,21 +2,21 @@
 
 ## Brand Feel
 Balanced Hybrid:
-- Professional + Human
+- Professional
+- Human
 - Calm in crisis
-- Trust-first design
 
 ---
 
-## Color Palette
+## Colors
 
 Primary:
-- Deep Navy (#0B1F2A) → trust, authority
-- Charcoal (#1C1C1C) → seriousness
+- Deep Navy (#0B1F2A)
+- Charcoal (#1C1C1C)
 
 Accent:
-- Soft Gold (#C8A96A) → premium warmth
-- Muted Red (#8B2E2E) → urgency (use sparingly)
+- Soft Gold (#C8A96A)
+- Muted Red (#8B2E2E)
 
 Background:
 - Off White (#F7F7F7)
@@ -24,36 +24,26 @@ Background:
 ---
 
 ## Typography
-
-Headlines:
-- Clean sans-serif (Inter / Helvetica)
-- Bold but not aggressive
-
-Body:
+- Clean, modern sans-serif
 - Highly readable
-- Slightly larger than normal
+- Slightly larger body text
 
 ---
 
-## Visual Style
-
-- Subtle gradients (dark → light)
-- Soft shadows
-- Minimal animations (fade, hover lift)
-
-Avoid:
-- Flashy effects
-- Loud colors
-- Clutter
+## Visual Rules
+- Subtle motion only
+- Clean spacing
+- No clutter
 
 ---
 
 ## Imagery
+- Realistic, grounded
+- No over-dramatic stock photos
 
-Use:
-- Real people
-- Subtle environmental textures (water, smoke)
+---
 
-Avoid:
-- Stocky, fake-feeling imagery
-- Overly dramatic disaster visuals
+## Trust Sections Styling
+- Grid layout
+- Clean spacing
+- Premium feel
