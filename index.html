@@ -704,6 +704,202 @@
       line-height: 1.4;
     }
 
+    /* ─── Authority Section ─── */
+    #authority { background: var(--navy); }
+
+    .authority-intro {
+      text-align: center;
+      margin-bottom: 3.5rem;
+    }
+
+    .authority-intro .section-tag {
+      background: rgba(200,169,106,0.18);
+      border-color: rgba(200,169,106,0.35);
+      color: var(--gold);
+    }
+
+    .authority-intro h2 { color: var(--white); margin-bottom: 0.875rem; }
+
+    .authority-intro p {
+      color: rgba(255,255,255,0.7);
+      max-width: 620px;
+      margin: 0 auto;
+      font-size: 1.0625rem;
+    }
+
+    .authority-blocks {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .authority-block {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(200,169,106,0.2);
+      border-radius: var(--radius-lg);
+      padding: 2rem 1.75rem;
+      transition: background 0.2s ease, border-color 0.2s ease;
+    }
+
+    .authority-block:hover {
+      background: rgba(255,255,255,0.08);
+      border-color: rgba(200,169,106,0.4);
+    }
+
+    .authority-block-header {
+      display: flex;
+      align-items: center;
+      gap: 0.875rem;
+      margin-bottom: 1.25rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid rgba(200,169,106,0.15);
+    }
+
+    .authority-block-icon {
+      width: 46px;
+      height: 46px;
+      background: rgba(200,169,106,0.15);
+      border: 1px solid rgba(200,169,106,0.3);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      flex-shrink: 0;
+    }
+
+    .authority-block h3 {
+      color: var(--gold);
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 1.3;
+    }
+
+    .authority-license-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.625rem;
+      margin-bottom: 1rem;
+    }
+
+    .authority-license-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+      color: rgba(255,255,255,0.88);
+      font-size: 0.9375rem;
+      font-weight: 500;
+      line-height: 1.4;
+    }
+
+    .authority-license-list li::before {
+      content: '✓';
+      color: var(--gold);
+      font-weight: 800;
+      font-size: 0.8rem;
+      flex-shrink: 0;
+      margin-top: 0.175em;
+    }
+
+    .authority-footnote {
+      font-size: 0.8125rem;
+      color: rgba(255,255,255,0.45);
+      font-style: italic;
+      line-height: 1.5;
+    }
+
+    /* ─── About Section ─── */
+    #about { background: var(--white); }
+
+    .about-layout {
+      display: grid;
+      grid-template-columns: 1fr 1.4fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .about-visual {
+      background: linear-gradient(145deg, var(--navy) 0%, var(--navy-mid) 100%);
+      border-radius: var(--radius-lg);
+      padding: 3rem 2.5rem;
+      text-align: center;
+      color: var(--white);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .about-visual::before {
+      content: '';
+      position: absolute;
+      top: -30px;
+      right: -30px;
+      width: 120px;
+      height: 120px;
+      background: rgba(200,169,106,0.08);
+      border-radius: 50%;
+    }
+
+    .about-avatar {
+      width: 90px;
+      height: 90px;
+      background: var(--gold);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--navy);
+      margin: 0 auto 1.25rem;
+      border: 3px solid rgba(200,169,106,0.4);
+    }
+
+    .about-name {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 0.25rem;
+    }
+
+    .about-title {
+      font-size: 0.8125rem;
+      color: var(--gold);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 1.5rem;
+    }
+
+    .about-license-badges {
+      display: flex;
+      flex-direction: column;
+      gap: 0.625rem;
+    }
+
+    .about-badge {
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(200,169,106,0.2);
+      border-radius: var(--radius);
+      padding: 0.625rem 0.875rem;
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.8);
+      text-align: left;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .about-badge::before {
+      content: '🪪';
+      font-size: 0.875rem;
+      flex-shrink: 0;
+    }
+
+    .about-content .section-tag { margin-bottom: 0.875rem; }
+    .about-content h2 { color: var(--navy); margin-bottom: 0.875rem; }
+    .about-content p { color: var(--text-muted); margin-bottom: 1.25rem; font-size: 1.0625rem; line-height: 1.7; }
+
     /* ─── Credentials ─── */
     #credentials { background: var(--off-white); }
 
@@ -732,7 +928,7 @@
       border-color: rgba(200,169,106,0.3);
     }
 
-    .credential-logo-placeholder {
+    .credential-logo-badge {
       width: 64px;
       height: 64px;
       background: var(--navy);
@@ -744,6 +940,8 @@
       font-weight: 800;
       font-size: 0.8125rem;
       letter-spacing: 0.03em;
+      line-height: 1.2;
+      text-align: center;
     }
 
     .credential-name {
@@ -757,6 +955,10 @@
       font-size: 0.775rem;
       color: var(--text-muted);
       line-height: 1.4;
+    }
+
+    @media (max-width: 900px) {
+      .about-layout { grid-template-columns: 1fr; gap: 2.5rem; }
     }
 
     /* ─── Resources ─── */
@@ -1283,8 +1485,8 @@
 
     <nav class="desktop-nav" aria-label="Main navigation">
       <a href="#services">Services</a>
-      <a href="#trust">About</a>
-      <a href="#credentials">Credentials</a>
+      <a href="#authority">Credentials</a>
+      <a href="#about">About</a>
       <a href="#resources">Resources</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -1308,11 +1510,11 @@
 
   <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
     <a href="#services">Services</a>
-    <a href="#trust">About</a>
-    <a href="#credentials">Credentials</a>
+    <a href="#authority">Credentials</a>
+    <a href="#about">About</a>
     <a href="#resources">Resources</a>
     <a href="#contact">Contact</a>
-    <a href="tel:+14708819911" class="mobile-nav-phone" aria-label="Call Act of Valor">
+    <a href="tel:+14708819911" class="mobile-nav-phone" aria-label="Call Act of Valor at 470-881-9911">
       📞 Call Now — (470) 881-9911
     </a>
   </nav>
@@ -1342,7 +1544,7 @@
 
       <p class="hero-trust-line">
         <span class="check-gold" aria-hidden="true">✓</span>
-        Trusted by families, property managers, and law enforcement partners
+        Licensed. Certified. Trusted by families, property managers, and law enforcement partners.
       </p>
 
       <div class="hero-cta-group">
@@ -1512,7 +1714,7 @@
           </li>
           <li class="trust-item">
             <div class="trust-check" aria-hidden="true">✓</div>
-            <span class="trust-item-text">Focused on safety, discretion, and professionalism</span>
+            <span class="trust-item-text">Licensed, certified, and equipped to handle complex situations</span>
           </li>
         </ul>
       </div>
@@ -1545,53 +1747,186 @@
 
 
 <!-- ═══════════════════════════════════════════════
+     AUTHORITY SECTION (NEW)
+═══════════════════════════════════════════════ -->
+<section id="authority" aria-labelledby="authority-heading">
+  <div class="container">
+
+    <div class="authority-intro fade-in">
+      <div class="section-tag">Licensing &amp; Certifications</div>
+      <h2 id="authority-heading">Licensed. Certified. Prepared for What Others Can't Handle.</h2>
+      <p>Act of Valor combines industry certifications, state licensing, and real-world experience to handle restoration and biohazard situations with professionalism and care.</p>
+    </div>
+
+    <div class="authority-blocks">
+
+      <!-- Biohazard & Trauma Authority -->
+      <div class="authority-block fade-in">
+        <div class="authority-block-header">
+          <div class="authority-block-icon" aria-hidden="true">🛡️</div>
+          <h3>Biohazard &amp; Trauma Authority</h3>
+        </div>
+        <ul class="authority-license-list">
+          <li>Georgia Trauma Scene Waste Management Company License</li>
+          <li>Georgia Trauma Scene Waste Management Practitioner License <em style="color:rgba(255,255,255,0.55);font-style:normal;font-size:0.85em;">(Brian W. Miller)</em></li>
+        </ul>
+        <p class="authority-footnote">State-authorized to handle trauma and biohazard cleanup in Georgia.</p>
+      </div>
+
+      <!-- Restoration Certifications -->
+      <div class="authority-block fade-in">
+        <div class="authority-block-header">
+          <div class="authority-block-icon" aria-hidden="true">📋</div>
+          <h3>Restoration Certifications (IICRC)</h3>
+        </div>
+        <ul class="authority-license-list">
+          <li>Water Damage Restoration</li>
+          <li>Applied Microbial Remediation</li>
+          <li>Applied Structural Drying</li>
+          <li>Fire &amp; Smoke Damage Restoration</li>
+        </ul>
+        <p class="authority-footnote">Industry-standard certifications for safe and effective restoration.</p>
+      </div>
+
+      <!-- Property & Insurance Expertise -->
+      <div class="authority-block fade-in">
+        <div class="authority-block-header">
+          <div class="authority-block-icon" aria-hidden="true">📄</div>
+          <h3>Property &amp; Insurance Expertise</h3>
+        </div>
+        <ul class="authority-license-list">
+          <li>Georgia Adjuster License (Property &amp; Casualty)</li>
+          <li>Real Estate License</li>
+        </ul>
+        <p class="authority-footnote">Deep understanding of property, insurance, and restoration workflows.</p>
+      </div>
+
+      <!-- Environmental & Safety Compliance -->
+      <div class="authority-block fade-in">
+        <div class="authority-block-header">
+          <div class="authority-block-icon" aria-hidden="true">⚠️</div>
+          <h3>Environmental &amp; Safety Compliance</h3>
+        </div>
+        <ul class="authority-license-list">
+          <li>Lead-Safe Renovator Certification</li>
+          <li>Rope &amp; Harness Safety Training</li>
+        </ul>
+        <p class="authority-footnote">Committed to safety, compliance, and professional execution.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     ABOUT / EXPERT AUTHORITY
+═══════════════════════════════════════════════ -->
+<section id="about" aria-labelledby="about-heading">
+  <div class="container">
+    <div class="about-layout">
+
+      <div class="about-visual fade-in" aria-label="Brian W. Miller credentials">
+        <div class="about-avatar" aria-hidden="true">BM</div>
+        <p class="about-name">Brian W. Miller</p>
+        <p class="about-title">Founder &amp; Lead Practitioner</p>
+        <div class="about-license-badges" role="list" aria-label="Brian Miller's licenses">
+          <div class="about-badge" role="listitem">GA Trauma Scene Waste Management Practitioner</div>
+          <div class="about-badge" role="listitem">IICRC Certified — Water, Mold, Fire, Drying</div>
+          <div class="about-badge" role="listitem">Georgia Property &amp; Casualty Adjuster</div>
+          <div class="about-badge" role="listitem">Lead-Safe Renovator Certified</div>
+          <div class="about-badge" role="listitem">Georgia Real Estate License</div>
+        </div>
+      </div>
+
+      <div class="about-content fade-in">
+        <div class="section-tag">Expert Leadership</div>
+        <h2 id="about-heading">Experienced. Certified. Trusted.</h2>
+        <p>Act of Valor is built on hands-on experience, professional certifications, and a commitment to doing the job right.</p>
+        <p>Led by Brian W. Miller, the company brings together restoration expertise, state licensing, and real-world knowledge to handle everything from water damage to complex biohazard situations.</p>
+        <p>Every job is approached with care, discretion, and a focus on restoring both the space and peace of mind.</p>
+        <a href="tel:+14708819911" class="btn btn-primary" style="margin-top:0.5rem;" aria-label="Call Brian Miller's team now">
+          📞 Call Our Team — (470) 881-9911
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
      CREDENTIALS
 ═══════════════════════════════════════════════ -->
 <section id="credentials" aria-labelledby="credentials-heading">
   <div class="container">
 
     <div class="section-header fade-in">
-      <div class="section-tag">Professional Standards</div>
-      <h2 id="credentials-heading">Certified. Qualified. Trusted.</h2>
-      <p>We meet industry standards and maintain professional certifications to ensure every job is handled safely and correctly.</p>
+      <div class="section-tag">Full Credential Reference</div>
+      <h2 id="credentials-heading">Every License. Every Certification.</h2>
+      <p>Act of Valor holds every credential required to operate safely, legally, and professionally across all restoration and biohazard services.</p>
     </div>
 
     <div class="credentials-grid">
 
       <div class="credential-card fade-in">
-        <div class="credential-logo-placeholder" role="img" aria-label="IICRC certification logo">IICRC</div>
+        <div class="credential-logo-badge" role="img" aria-label="Georgia state biohazard license">GA<br>TSW</div>
+        <span class="credential-name">Trauma Scene Waste Management Company</span>
+        <span class="credential-org">State of Georgia — Licensed Company</span>
+      </div>
+
+      <div class="credential-card fade-in">
+        <div class="credential-logo-badge" role="img" aria-label="Georgia practitioner biohazard license">GA<br>PRAC</div>
+        <span class="credential-name">Trauma Scene Waste Management Practitioner</span>
+        <span class="credential-org">State of Georgia — Brian W. Miller</span>
+      </div>
+
+      <div class="credential-card fade-in">
+        <div class="credential-logo-badge" role="img" aria-label="IICRC Water Damage Restoration certification">IICRC<br>WRT</div>
         <span class="credential-name">Water Damage Restoration Technician</span>
         <span class="credential-org">Institute of Inspection Cleaning and Restoration Certification</span>
       </div>
 
       <div class="credential-card fade-in">
-        <div class="credential-logo-placeholder" role="img" aria-label="IICRC Applied Microbial Remediation logo">IICRC</div>
+        <div class="credential-logo-badge" role="img" aria-label="IICRC Applied Microbial Remediation certification">IICRC<br>AMRT</div>
         <span class="credential-name">Applied Microbial Remediation Technician</span>
         <span class="credential-org">Institute of Inspection Cleaning and Restoration Certification</span>
       </div>
 
       <div class="credential-card fade-in">
-        <div class="credential-logo-placeholder" role="img" aria-label="OSHA safety certification logo">OSHA</div>
-        <span class="credential-name">OSHA 10-Hour Safety Certification</span>
-        <span class="credential-org">Occupational Safety and Health Administration</span>
+        <div class="credential-logo-badge" role="img" aria-label="IICRC Applied Structural Drying certification">IICRC<br>ASD</div>
+        <span class="credential-name">Applied Structural Drying Technician</span>
+        <span class="credential-org">Institute of Inspection Cleaning and Restoration Certification</span>
       </div>
 
       <div class="credential-card fade-in">
-        <div class="credential-logo-placeholder" role="img" aria-label="EPA Lead RRP certification logo">EPA</div>
-        <span class="credential-name">Lead Renovation, Repair and Painting</span>
+        <div class="credential-logo-badge" role="img" aria-label="IICRC Fire and Smoke Restoration certification">IICRC<br>FSRT</div>
+        <span class="credential-name">Fire &amp; Smoke Damage Restoration Technician</span>
+        <span class="credential-org">Institute of Inspection Cleaning and Restoration Certification</span>
+      </div>
+
+      <div class="credential-card fade-in">
+        <div class="credential-logo-badge" role="img" aria-label="Georgia Property and Casualty Adjuster License">GA<br>P&amp;C</div>
+        <span class="credential-name">Property &amp; Casualty Adjuster License</span>
+        <span class="credential-org">State of Georgia — Insurance Licensing</span>
+      </div>
+
+      <div class="credential-card fade-in">
+        <div class="credential-logo-badge" role="img" aria-label="Georgia Real Estate License">GA<br>RE</div>
+        <span class="credential-name">Real Estate License</span>
+        <span class="credential-org">State of Georgia — Real Estate Commission</span>
+      </div>
+
+      <div class="credential-card fade-in">
+        <div class="credential-logo-badge" role="img" aria-label="EPA Lead-Safe Renovator Certification">EPA<br>LSR</div>
+        <span class="credential-name">Lead-Safe Renovator Certification</span>
         <span class="credential-org">U.S. Environmental Protection Agency</span>
       </div>
 
       <div class="credential-card fade-in">
-        <div class="credential-logo-placeholder" role="img" aria-label="Georgia state license logo">GA</div>
-        <span class="credential-name">Georgia State Licensed Contractor</span>
-        <span class="credential-org">Georgia Secretary of State — Professional Licensing</span>
-      </div>
-
-      <div class="credential-card fade-in">
-        <div class="credential-logo-placeholder" role="img" aria-label="Biohazard Remediation Specialist certification logo">BIO</div>
-        <span class="credential-name">Biohazard Remediation Specialist</span>
-        <span class="credential-org">American Bio Recovery Association</span>
+        <div class="credential-logo-badge" role="img" aria-label="Rope and Harness Safety Training certification">ROPE<br>SAFE</div>
+        <span class="credential-name">Rope &amp; Harness Safety Training</span>
+        <span class="credential-org">Occupational Safety Compliance</span>
       </div>
 
     </div>
@@ -2000,8 +2335,9 @@
       <div class="footer-col">
         <h4>Quick Links</h4>
         <ul class="footer-links">
-          <li><a href="#trust">About Us</a></li>
-          <li><a href="#credentials">Certifications</a></li>
+          <li><a href="#about">About Brian W. Miller</a></li>
+          <li><a href="#authority">Licenses &amp; Certifications</a></li>
+          <li><a href="#credentials">Full Credential List</a></li>
           <li><a href="#resources">Resources</a></li>
           <li><a href="#public-safety">Safety Updates</a></li>
           <li><a href="#contact">Contact Us</a></li>
