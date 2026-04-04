@@ -261,18 +261,10 @@
       flex-shrink: 0;
     }
 
-    .logo-mark {
+    .logo-img {
       width: 40px;
       height: 40px;
-      background: var(--gold);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 800;
-      font-size: 1rem;
-      color: var(--navy);
-      letter-spacing: -0.02em;
+      object-fit: contain;
       flex-shrink: 0;
     }
 
@@ -1600,7 +1592,7 @@
   <div class="header-inner">
 
     <a href="#" class="logo" aria-label="Act of Valor — Home">
-      <div class="logo-mark" aria-hidden="true">AV</div>
+      <img src="assets/images/aoc-logo.png" alt="Act of Valor logo" class="logo-img" width="40" height="40">
       <div class="logo-text">
         <span class="logo-name">Act of Valor</span>
         <span class="logo-sub">Emergency Restoration</span>
@@ -2549,7 +2541,10 @@
 
       <!-- Brand Column -->
       <div class="footer-brand">
-        <h3 class="footer-brand-name">Act of Valor</h3>
+        <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:0.75rem;">
+          <img src="assets/images/aoc-logo.png" alt="Act of Valor logo" width="44" height="44" style="object-fit:contain;">
+          <h3 class="footer-brand-name" style="margin-bottom:0;">Act of Valor</h3>
+        </div>
         <p>Emergency restoration services delivered with compassion, speed, and professionalism across the Atlanta metro area. Mold, water, biohazard, and fire — we're here when you need us most.</p>
 
         <a href="tel:+14708819911" class="footer-phone-btn" aria-label="Call Act of Valor at 470-881-9911">
