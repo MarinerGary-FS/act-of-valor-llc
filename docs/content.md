@@ -9,7 +9,7 @@ Subtext:
 Same-Day Mold, Water, Biohazard & Fire Cleanup Across Atlanta
 
 Trust Line:
-Trusted by families, property managers, and law enforcement partners
+Licensed. Certified. Trusted by families, property managers, and law enforcement partners.
 
 CTA:
 Call Now — Immediate Help  
@@ -96,18 +96,69 @@ When you’re dealing with unexpected damage or difficult situations, you need m
 - Compassionate, respectful approach in every situation  
 - Trusted by local professionals and law enforcement partners  
 - Same-day response across the Atlanta metro area  
-- Focused on safety, discretion, and professionalism  
+- Licensed, certified, and equipped to handle complex situations  
 
 ---
 
-## CREDENTIALS SECTION
+## AUTHORITY SECTION (NEW — HIGH IMPACT)
 
 Headline:
-Certified. Qualified. Trusted.
+Licensed. Certified. Prepared for What Others Can’t Handle.
 
-We meet industry standards and maintain professional certifications to ensure every job is handled safely and correctly.
+Subtext:
+Act of Valor combines industry certifications, state licensing, and real-world experience to handle restoration and biohazard situations with professionalism and care.
 
-(Claude: dynamically render all certification logos and details here)
+---
+
+### Biohazard & Trauma Authority
+
+- Georgia Trauma Scene Waste Management Company License  
+- Georgia Trauma Scene Waste Management Practitioner License (Brian W. Miller)  
+
+State-authorized to handle trauma and biohazard cleanup in Georgia.
+
+---
+
+### Restoration Certifications (IICRC)
+
+- Water Damage Restoration  
+- Applied Microbial Remediation  
+- Applied Structural Drying  
+- Fire & Smoke Damage Restoration  
+
+Industry-standard certifications for safe and effective restoration.
+
+---
+
+### Property & Insurance Expertise
+
+- Georgia Adjuster License (Property & Casualty)  
+- Real Estate License  
+
+Deep understanding of property, insurance, and restoration workflows.
+
+---
+
+### Environmental & Safety Compliance
+
+- Lead-Safe Renovator Certification  
+- Rope & Harness Safety Training  
+
+Committed to safety, compliance, and professional execution.
+
+---
+
+## ABOUT / EXPERT AUTHORITY (HYBRID POSITIONING)
+
+Headline:
+Experienced. Certified. Trusted.
+
+Body:
+Act of Valor is built on hands-on experience, professional certifications, and a commitment to doing the job right.
+
+Led by Brian W. Miller, the company brings together restoration expertise, licensing, and real-world knowledge to handle everything from water damage to complex biohazard situations.
+
+Every job is approached with care, discretion, and a focus on restoring both the space and peace of mind.
 
 ---
 
@@ -131,8 +182,6 @@ Headline:
 Atlanta Public Safety Updates
 
 Stay informed with relevant updates affecting the Atlanta metro area.
-
-(Claude: render local news / safety feed here)
 
 ---
 
