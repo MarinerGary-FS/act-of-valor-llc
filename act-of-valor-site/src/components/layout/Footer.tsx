@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { SITE } from "@/lib/constants";
+import AttributionCredit from "@/components/ui/AttributionCredit";
 
 export default function Footer() {
   return (
@@ -114,13 +115,11 @@ export default function Footer() {
           </div>
 
           {/* Footer Bottom */}
-          <div className="border-t border-gray-700 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+          <div className="border-t border-gray-700 pt-8 flex flex-col items-center gap-4">
             <p className="text-xs text-gray-400">
               &copy; {new Date().getFullYear()} {SITE.name}. All rights reserved.
             </p>
-            <p className="text-xs text-gray-500">
-              Built by Mariner Nexus
-            </p>
+            <AttributionCredit />
           </div>
         </div>
       </div>
