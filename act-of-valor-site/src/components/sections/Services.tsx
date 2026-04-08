@@ -1,0 +1,104 @@
+'use client';
+
+import { motion } from 'framer-motion';
+import { fadeUp, staggerContainer } from '@/lib/motion';
+import { SERVICES, SITE } from '@/lib/constants';
+
+export default function Services() {
+  return (
+    <section id="services" className="w-full bg-[var(--color-off-white)] py-20 sm:py-28 lg:py-32">
+      <motion.div
+        className="mx-auto max-w-6xl px-6 sm:px-8 lg:px-12"
+        variants={staggerContainer}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, margin: '-100px' }}
+      >
+        {/* Section Header */}
+        <div className="mb-16 text-center">
+          <motion.div variants={fadeUp} className="mb-4">
+            <span className="inline-block text-sm font-semibold uppercase tracking-wider text-[var(--color-gold)]">
+              Our Services
+            </span>
+          </motion.div>
+          <motion.h2
+            variants={fadeUp}
+            className="mb-4 text-3xl sm:text-4xl lg:text-5xl font-bold text-[var(--color-navy)]"
+          >
+            What Can We Help You With?
+          </motion.h2>
+          <motion.p
+            variants={fadeUp}
+            className="mx-auto max-w-2xl text-lg text-gray-600"
+          >
+            Act of Valor provides same-day emergency response for mold, water,
+            trauma, and fire damage across Atlanta metro.
+          </motion.p>
+        </div>
+
+        {/* Services Grid */}
+        <motion.div
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: '-100px' }}
+        >
+          {SERVICES.map((service) => (
+            <motion.div
+              key={service.id}
+              variants={fadeUp}
+              className="group relative overflow-hidden rounded-2xl bg-white border border-gray-200 p-6 transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
+            >
+              {/* Gold top border on hover */}
+              <div className="absolute top-0 left-0 right-0 h-1 bg-[var(--color-gold)] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
+
+              {/* Icon */}
+              <div className="mb-5 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-gray-100 text-2xl group-hover:bg-[var(--color-gold)] group-hover:text-white transition-colors duration-300">
+                {service.icon}
+              </div>
+
+              {/* Title */}
+              <h3 className="mb-3 text-xl font-bold text-[var(--color-navy)]">
+                {service.title}
+              </h3>
+
+              {/* Problem Statement (Red) */}
+              <p className="mb-3 text-sm font-medium text-[var(--color-red)]">
+                {service.problem}
+              </p>
+
+              {/* Instruction (Italic) */}
+              <p className="mb-4 text-sm italic text-gray-700">
+                {service.instruction}
+              </p>
+
+              {/* Bullets */}
+              <ul className="mb-6 space-y-2">
+                {service.bullets.map((bullet, idx) => (
+                  <li
+                    key={idx}
+                    className="flex items-start gap-2 text-sm text-gray-600"
+                  >
+                    <span className="mt-1.5 flex-shrink-0 text-[var(--color-gold)]">
+                      →
+                    </span>
+                    <span>{bullet}</span>
+                  </li>
+                ))}
+              </ul>
+
+              {/* CTA Button */}
+              <a
+                href={SITE.phoneHref}
+                className="block w-full rounded-lg bg-[var(--color-navy)] hover:bg-[var(--color-charcoal)] text-white font-semibold py-3 px-4 text-center transition-colors duration-200"
+              >
+                {service.cta}
+              </a>
+            </motion.div>
+          ))}
+        </motion.div>
+      </motion.div>
+    </section>
+  );
+}
