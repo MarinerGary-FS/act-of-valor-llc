@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { fadeUp, staggerContainer } from '@/lib/motion';
+import { SITE } from '@/lib/constants';
 
 const credentials = [
   'GA Trauma Scene Waste Management Practitioner',
@@ -19,7 +20,7 @@ const aboutText = [
 
 export default function About() {
   return (
-    <section className="bg-white py-16 sm:py-20 px-4 sm:px-6 lg:px-8">
+    <section id="about" className="bg-[var(--color-surface-card)] py-16 sm:py-20 px-4 sm:px-6 lg:px-8">
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -29,18 +30,18 @@ export default function About() {
       >
         {/* Left Column - Profile Card */}
         <motion.div variants={fadeUp}>
-          <div className="bg-gradient-to-br from-navy to-charcoal rounded-lg p-8 text-center sticky top-8">
+          <div className="bg-gradient-to-br from-[var(--color-navy)] to-[var(--color-charcoal)] rounded-lg p-8 text-center sticky top-8">
             {/* Avatar */}
-            <div className="w-24 h-24 mx-auto mb-6 rounded-full bg-gold flex items-center justify-center">
-              <span className="text-navy font-bold text-4xl">BM</span>
+            <div className="w-24 h-24 mx-auto mb-6 rounded-full bg-[var(--color-brand-primary)] flex items-center justify-center">
+              <span className="text-[var(--color-navy)] font-bold text-4xl">BM</span>
             </div>
 
             {/* Name and Title */}
-            <h3 className="text-2xl font-bold text-white mb-2">
+            <h3 className="text-2xl font-bold text-[var(--color-content-inverse)] mb-2">
               Brian W. Miller
             </h3>
-            <p className="text-gold uppercase text-xs font-bold tracking-widest mb-8">
-              Founder & Lead Practitioner
+            <p className="text-[var(--color-brand-primary)] uppercase text-xs font-bold tracking-widest mb-8">
+              Founder &amp; Lead Practitioner
             </p>
 
             {/* License Badges */}
@@ -48,10 +49,10 @@ export default function About() {
               {credentials.map((credential, index) => (
                 <div
                   key={index}
-                  className="bg-white bg-opacity-10 rounded-lg p-3 backdrop-blur-sm"
+                  className="bg-white/10 rounded-lg p-3 backdrop-blur-sm"
                 >
-                  <p className="text-white text-sm font-medium leading-snug">
-                    <span className="text-gold mr-2">🏅</span>
+                  <p className="text-[var(--color-content-inverse)] text-sm font-medium leading-snug">
+                    <span className="text-[var(--color-brand-primary)] mr-2">&#x1F396;</span>
                     {credential}
                   </p>
                 </div>
@@ -62,21 +63,18 @@ export default function About() {
 
         {/* Right Column - Content */}
         <motion.div variants={fadeUp} className="flex flex-col">
-          {/* Tag */}
           <div className="inline-flex items-center gap-2 mb-4">
-            <span className="inline-block w-2 h-2 rounded-full bg-gold"></span>
-            <span className="text-gold uppercase text-xs font-bold tracking-widest">
+            <span className="inline-block w-2 h-2 rounded-full bg-[var(--color-brand-primary)]" />
+            <span className="text-[var(--color-brand-primary)] uppercase text-xs font-bold tracking-widest">
               Expert Leadership
             </span>
           </div>
 
-          {/* Heading */}
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-navy mb-6">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[var(--color-navy)] mb-6">
             Experienced. Certified. Trusted.
           </h2>
 
-          {/* About Paragraphs */}
-          <div className="space-y-5 mb-8 text-charcoal text-opacity-80">
+          <div className="space-y-5 mb-8 text-[var(--color-content-secondary)]">
             {aboutText.map((paragraph, index) => (
               <p key={index} className="text-base sm:text-lg leading-relaxed">
                 {paragraph}
@@ -84,12 +82,11 @@ export default function About() {
             ))}
           </div>
 
-          {/* CTA Button */}
           <a
-            href="tel:+14708819911"
-            className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 bg-navy text-white font-bold text-base sm:text-lg rounded-lg hover:bg-opacity-90 transition-all duration-300 active:scale-95 w-fit"
+            href={SITE.phoneHref}
+            className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 bg-[var(--color-navy)] text-[var(--color-content-inverse)] font-bold text-base sm:text-lg rounded-lg hover:opacity-90 transition-all duration-300 active:scale-95 w-fit"
           >
-            Call Our Team — (470) 881-9911
+            Call Our Team — {SITE.phone}
           </a>
         </motion.div>
       </motion.div>

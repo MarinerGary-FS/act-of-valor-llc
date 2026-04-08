@@ -1,9 +1,9 @@
 import Hero from "@/components/sections/Hero";
+import TrustSection from "@/components/sections/TrustSection";
 import Services from "@/components/sections/Services";
 import CTABlock from "@/components/sections/CTABlock";
-import TrustSection from "@/components/sections/TrustSection";
-import Authority from "@/components/sections/Authority";
 import About from "@/components/sections/About";
+import Authority from "@/components/sections/Authority";
 import Credentials from "@/components/sections/Credentials";
 import Resources from "@/components/sections/Resources";
 import PublicSafety from "@/components/sections/PublicSafety";
@@ -14,17 +14,17 @@ import ContactForm from "@/components/sections/ContactForm";
  *
  * Section flow follows CONVERSION_ENGINE.md Profile A:
  * 1. Hero → Establish what this is and who it's for
- * 2. Services → Help user identify their situation in <5 seconds
- * 3. CTA Block #1 → Reinforce action after services
- * 4. Trust Section → Why Atlanta trusts us
- * 5. Authority → Licensing & certifications
- * 6. About → Expert leadership + Brian W. Miller
+ * 2. Trust Section → Social proof near hero (within 2 sections)
+ * 3. Services → Help user identify their situation
+ * 4. CTA Block #1 → Reinforce action after services
+ * 5. About → Expert leadership + Brian W. Miller
+ * 6. Authority → Licensing & certifications at a glance
  * 7. Credentials → Full credential reference with images
  * 8. CTA Block #2 → Re-offer before resources
  * 9. Resources → SEO authority module
  * 10. Public Safety → Local relevance module
  * 11. Contact Form → Final low-friction conversion
- * 12. Footer (in layout) → Navigation, legal, final CTA
+ * 12. Footer (in layout)
  */
 export default function Home() {
   return (
@@ -32,25 +32,25 @@ export default function Home() {
       {/* 1. HERO — Primary conversion entry */}
       <Hero />
 
-      {/* 2. SERVICES — Decision engine */}
+      {/* 2. TRUST — Social proof near hero (CONVERSION_ENGINE.md) */}
+      <TrustSection />
+
+      {/* 3. SERVICES — Decision engine */}
       <Services />
 
-      {/* 3. CTA BLOCK #1 — Post-services conversion reinforcement */}
+      {/* 4. CTA BLOCK #1 — Post-services conversion reinforcement */}
       <CTABlock
         heading="Need Help Right Now?"
         subtext="Our team is standing by — ready to respond same-day across Atlanta and the metro area."
       />
 
-      {/* 4. TRUST — Emotional + authority layer */}
-      <TrustSection />
-
-      {/* 5. AUTHORITY — Licensing & certifications */}
-      <Authority />
-
-      {/* 6. ABOUT — Expert leadership */}
+      {/* 5. ABOUT — Expert leadership */}
       <About />
 
-      {/* 7. CREDENTIALS — Full credential reference */}
+      {/* 6. AUTHORITY — Licensing & certifications at a glance */}
+      <Authority />
+
+      {/* 7. CREDENTIALS — Full credential reference with images */}
       <Credentials />
 
       {/* 8. CTA BLOCK #2 — Re-offer before resources */}

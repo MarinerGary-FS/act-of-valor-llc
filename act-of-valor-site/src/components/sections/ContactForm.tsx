@@ -30,10 +30,7 @@ export default function ContactForm() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Form submission logic would go here
-    // For now, just show success state
     setIsSubmitted(true);
-    // Reset form after 3 seconds
     setTimeout(() => {
       setFormData({
         name: '',
@@ -46,16 +43,8 @@ export default function ContactForm() {
     }, 3000);
   };
 
-  const serviceAreas = [
-    'Atlanta',
-    'Sandy Springs',
-    'Marietta',
-    'Douglasville',
-    'Buckhead',
-  ];
-
   return (
-    <section id="contact" className="bg-white py-16 sm:py-20 px-4 sm:px-6 lg:px-8">
+    <section id="contact" className="bg-[var(--color-surface-card)] py-16 sm:py-20 px-4 sm:px-6 lg:px-8">
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -65,64 +54,62 @@ export default function ContactForm() {
       >
         {/* Left Column */}
         <motion.div variants={fadeUp} className="flex flex-col">
-          <h2 className="text-3xl sm:text-4xl font-bold text-navy mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[var(--color-navy)] mb-4">
             Get Help Now
           </h2>
-          <p className="text-base sm:text-lg text-charcoal text-opacity-70 mb-8">
-            We understand you're in a stressful situation. Our team is ready to
+          <p className="text-base sm:text-lg text-[var(--color-content-secondary)] mb-8">
+            We understand you&apos;re in a stressful situation. Our team is ready to
             provide immediate support and same-day response across the Atlanta
             metro area.
           </p>
 
           {/* Contact Options */}
           <div className="space-y-6 mb-8">
-            {/* Phone Option */}
             <div className="flex gap-4">
-              <div className="flex-shrink-0 w-12 h-12 bg-navy rounded-lg flex items-center justify-center">
-                <span className="text-white text-lg font-bold">☎</span>
+              <div className="flex-shrink-0 w-12 h-12 bg-[var(--color-navy)] rounded-lg flex items-center justify-center">
+                <span className="text-[var(--color-content-inverse)] text-lg font-bold">&#x260E;</span>
               </div>
               <div>
-                <h3 className="font-bold text-navy text-lg mb-1">
+                <h3 className="font-bold text-[var(--color-navy)] text-lg mb-1">
                   Call Us Now
                 </h3>
                 <a
-                  href="tel:+14708819911"
-                  className="text-gold hover:text-gold-dark font-semibold transition-colors"
+                  href={SITE.phoneHref}
+                  className="text-[var(--color-brand-primary)] hover:text-[var(--color-brand-primary-hover)] font-semibold transition-colors"
                 >
-                  (470) 881-9911
+                  {SITE.phone}
                 </a>
               </div>
             </div>
 
-            {/* Email Option */}
             <div className="flex gap-4">
-              <div className="flex-shrink-0 w-12 h-12 bg-navy rounded-lg flex items-center justify-center">
-                <span className="text-white text-lg font-bold">✉</span>
+              <div className="flex-shrink-0 w-12 h-12 bg-[var(--color-navy)] rounded-lg flex items-center justify-center">
+                <span className="text-[var(--color-content-inverse)] text-lg font-bold">&#x2709;</span>
               </div>
               <div>
-                <h3 className="font-bold text-navy text-lg mb-1">Email Us</h3>
+                <h3 className="font-bold text-[var(--color-navy)] text-lg mb-1">Email Us</h3>
                 <a
-                  href="mailto:info@actofvalorrestoration.com"
-                  className="text-gold hover:text-gold-dark font-semibold transition-colors"
+                  href={`mailto:${SITE.email}`}
+                  className="text-[var(--color-brand-primary)] hover:text-[var(--color-brand-primary-hover)] font-semibold transition-colors"
                 >
-                  info@actofvalorrestoration.com
+                  {SITE.email}
                 </a>
               </div>
             </div>
           </div>
 
           {/* Service Areas Box */}
-          <div className="bg-off-white rounded-lg p-6 border-l-4 border-gold">
-            <h4 className="font-bold text-navy text-sm uppercase tracking-wider mb-3">
+          <div className="bg-[var(--color-surface-page)] rounded-lg p-6 border-l-4 border-[var(--color-brand-primary)]">
+            <h4 className="font-bold text-[var(--color-navy)] text-sm uppercase tracking-wider mb-3">
               Our Service Areas
             </h4>
             <ul className="space-y-2">
-              {serviceAreas.map((area) => (
+              {SITE.serviceAreas.map((area) => (
                 <li
                   key={area}
-                  className="text-charcoal text-sm flex items-start gap-2"
+                  className="text-[var(--color-content-primary)] text-sm flex items-start gap-2"
                 >
-                  <span className="text-gold font-bold mt-0.5">•</span>
+                  <span className="text-[var(--color-brand-primary)] font-bold mt-0.5">&#x2022;</span>
                   {area}
                 </li>
               ))}
@@ -132,22 +119,20 @@ export default function ContactForm() {
 
         {/* Right Column - Form */}
         <motion.div variants={fadeUp}>
-          <div className="bg-off-white rounded-lg p-6 sm:p-8">
-            {/* Form State */}
+          <div className="bg-[var(--color-surface-page)] rounded-lg p-6 sm:p-8">
             {!isSubmitted ? (
               <>
-                <h3 className="text-2xl sm:text-3xl font-bold text-navy mb-6">
+                <h3 className="text-2xl sm:text-3xl font-bold text-[var(--color-navy)] mb-6">
                   Request Same-Day Service
                 </h3>
 
                 <form onSubmit={handleSubmit} className="space-y-5">
-                  {/* Name Field */}
                   <div>
                     <label
                       htmlFor="name"
-                      className="block text-sm font-semibold text-charcoal mb-2"
+                      className="block text-sm font-semibold text-[var(--color-content-primary)] mb-2"
                     >
-                      Your Name
+                      Your Name *
                     </label>
                     <input
                       type="text"
@@ -156,18 +141,17 @@ export default function ContactForm() {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-charcoal border-opacity-20 rounded-lg focus:outline-none focus:ring-2 focus:ring-navy text-charcoal"
+                      className="w-full px-4 py-3 border border-[var(--color-border-default)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--color-navy)] text-[var(--color-content-primary)] bg-[var(--color-surface-card)]"
                       placeholder="John Doe"
                     />
                   </div>
 
-                  {/* Phone Field */}
                   <div>
                     <label
                       htmlFor="phone"
-                      className="block text-sm font-semibold text-charcoal mb-2"
+                      className="block text-sm font-semibold text-[var(--color-content-primary)] mb-2"
                     >
-                      Phone Number
+                      Phone Number *
                     </label>
                     <input
                       type="tel"
@@ -176,18 +160,17 @@ export default function ContactForm() {
                       value={formData.phone}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-charcoal border-opacity-20 rounded-lg focus:outline-none focus:ring-2 focus:ring-navy text-charcoal"
+                      className="w-full px-4 py-3 border border-[var(--color-border-default)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--color-navy)] text-[var(--color-content-primary)] bg-[var(--color-surface-card)]"
                       placeholder="(470) 881-9911"
                     />
                   </div>
 
-                  {/* Service Type Select */}
                   <div>
                     <label
                       htmlFor="serviceType"
-                      className="block text-sm font-semibold text-charcoal mb-2"
+                      className="block text-sm font-semibold text-[var(--color-content-primary)] mb-2"
                     >
-                      What Happened?
+                      What Happened? *
                     </label>
                     <select
                       id="serviceType"
@@ -195,7 +178,7 @@ export default function ContactForm() {
                       value={formData.serviceType}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-charcoal border-opacity-20 rounded-lg focus:outline-none focus:ring-2 focus:ring-navy text-charcoal bg-white"
+                      className="w-full px-4 py-3 border border-[var(--color-border-default)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--color-navy)] text-[var(--color-content-primary)] bg-[var(--color-surface-card)]"
                     >
                       <option value="">Select a service type</option>
                       <option value="mold">Mold Damage</option>
@@ -206,11 +189,10 @@ export default function ContactForm() {
                     </select>
                   </div>
 
-                  {/* Location Field */}
                   <div>
                     <label
                       htmlFor="location"
-                      className="block text-sm font-semibold text-charcoal mb-2"
+                      className="block text-sm font-semibold text-[var(--color-content-primary)] mb-2"
                     >
                       Location / Area
                     </label>
@@ -220,16 +202,15 @@ export default function ContactForm() {
                       name="location"
                       value={formData.location}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-charcoal border-opacity-20 rounded-lg focus:outline-none focus:ring-2 focus:ring-navy text-charcoal"
+                      className="w-full px-4 py-3 border border-[var(--color-border-default)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--color-navy)] text-[var(--color-content-primary)] bg-[var(--color-surface-card)]"
                       placeholder="e.g., Marietta, GA"
                     />
                   </div>
 
-                  {/* Details Textarea */}
                   <div>
                     <label
                       htmlFor="details"
-                      className="block text-sm font-semibold text-charcoal mb-2"
+                      className="block text-sm font-semibold text-[var(--color-content-primary)] mb-2"
                     >
                       Additional Details (Optional)
                     </label>
@@ -239,31 +220,29 @@ export default function ContactForm() {
                       value={formData.details}
                       onChange={handleChange}
                       rows={4}
-                      className="w-full px-4 py-3 border border-charcoal border-opacity-20 rounded-lg focus:outline-none focus:ring-2 focus:ring-navy text-charcoal resize-none"
+                      className="w-full px-4 py-3 border border-[var(--color-border-default)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--color-navy)] text-[var(--color-content-primary)] bg-[var(--color-surface-card)] resize-none"
                       placeholder="Tell us more about what happened..."
                     />
                   </div>
 
-                  {/* Submit Button */}
                   <button
                     type="submit"
-                    className="w-full px-6 py-3 sm:py-4 bg-navy text-white font-bold text-base sm:text-lg rounded-lg hover:bg-opacity-90 transition-all duration-300 active:scale-95"
+                    className="w-full px-6 py-3 sm:py-4 bg-[var(--color-navy)] text-[var(--color-content-inverse)] font-bold text-base sm:text-lg rounded-lg hover:opacity-90 transition-all duration-300 active:scale-95"
                   >
-                    Send My Request
+                    Get Immediate Help
                   </button>
                 </form>
               </>
             ) : (
-              // Success State
-              <div className="flex flex-col items-center justify-center py-12 text-center border-4 border-gold rounded-lg bg-white">
-                <div className="text-5xl mb-4">✓</div>
-                <h3 className="text-2xl font-bold text-navy mb-2">
+              <div className="flex flex-col items-center justify-center py-12 text-center border-4 border-[var(--color-brand-primary)] rounded-lg bg-[var(--color-surface-card)]">
+                <div className="text-5xl mb-4">&#x2713;</div>
+                <h3 className="text-2xl font-bold text-[var(--color-navy)] mb-2">
                   Request Received
                 </h3>
-                <p className="text-charcoal text-opacity-70 mb-2">
-                  Thank you! We've received your request.
+                <p className="text-[var(--color-content-secondary)] mb-2">
+                  Thank you! We&apos;ve received your request.
                 </p>
-                <p className="text-sm text-charcoal text-opacity-60">
+                <p className="text-sm text-[var(--color-content-tertiary)]">
                   Our team will contact you shortly to confirm same-day service.
                 </p>
               </div>

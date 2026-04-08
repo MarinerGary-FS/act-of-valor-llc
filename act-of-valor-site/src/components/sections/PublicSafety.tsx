@@ -15,7 +15,7 @@ export default function PublicSafety() {
   };
 
   return (
-    <section className="w-full bg-[#F7F7F7] py-16 md:py-24">
+    <section id="safety" className="w-full bg-[var(--color-surface-page)] py-16 md:py-24">
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <motion.div
@@ -25,13 +25,13 @@ export default function PublicSafety() {
           whileInView="visible"
           viewport={{ once: true, margin: '-100px' }}
         >
-          <p className="text-sm font-semibold uppercase tracking-widest text-[#C8A96A]">
+          <p className="text-sm font-semibold uppercase tracking-widest text-[var(--color-brand-primary)]">
             Local Updates
           </p>
-          <h2 className="mt-2 text-3xl font-bold text-[#0B1F2A] md:text-4xl">
+          <h2 className="mt-2 text-3xl font-bold text-[var(--color-navy)] md:text-4xl">
             Atlanta Public Safety Updates
           </h2>
-          <p className="mt-4 text-lg text-[#1C1C1C]">
+          <p className="mt-4 text-lg text-[var(--color-content-primary)]">
             Stay informed with relevant updates affecting the Atlanta metro area.
           </p>
         </motion.div>
@@ -47,35 +47,28 @@ export default function PublicSafety() {
           {SAFETY_UPDATES.map((update) => (
             <motion.div
               key={update.title}
-              className="rounded border-l-4 border-[#0B1F2A] bg-white p-6 shadow-sm transition-shadow duration-200 hover:shadow-md"
+              className="rounded border-l-4 border-[var(--color-navy)] bg-[var(--color-surface-card)] p-6 shadow-[var(--shadow-sm)] transition-shadow duration-200 hover:shadow-[var(--shadow-md)]"
               variants={fadeUp}
             >
-              {/* Meta Information (date + source) */}
               <div className="mb-3 flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
-                <p className="font-bold text-[#0B1F2A]">
+                <p className="font-bold text-[var(--color-navy)]">
                   {formatDate(update.date)}
                 </p>
-                <p className="text-sm text-gray-500">{update.source}</p>
+                <p className="text-sm text-[var(--color-content-tertiary)]">{update.source}</p>
               </div>
-
-              {/* Title */}
-              <h4 className="text-lg font-bold text-[#0B1F2A]">
+              <h4 className="text-lg font-bold text-[var(--color-navy)]">
                 {update.title}
               </h4>
-
-              {/* Description */}
-              <p className="mt-2 text-[#1C1C1C]">
+              <p className="mt-2 text-[var(--color-content-primary)]">
                 {update.description}
               </p>
-
-              {/* Read More Link */}
               <a
                 href={update.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-3 inline-block text-[#A8843A] transition-colors duration-200 hover:text-[#0B1F2A]"
+                className="mt-3 inline-block text-[var(--color-brand-primary-hover)] transition-colors duration-200 hover:text-[var(--color-navy)]"
               >
-                Read more →
+                Read more &#x2192;
               </a>
             </motion.div>
           ))}
@@ -83,7 +76,7 @@ export default function PublicSafety() {
 
         {/* Disclaimer */}
         <motion.div
-          className="mt-10 rounded border border-[#D0D0D0] bg-white p-4 text-sm text-gray-600"
+          className="mt-10 rounded border border-[var(--color-border-strong)] bg-[var(--color-surface-card)] p-4 text-sm text-[var(--color-content-secondary)]"
           variants={fadeUp}
           initial="hidden"
           whileInView="visible"
