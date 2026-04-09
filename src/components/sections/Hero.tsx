@@ -54,7 +54,15 @@ export default function Hero() {
           variants={fadeUpHero}
           className="mb-8 text-lg sm:text-xl text-gray-200"
         >
-          Same-Day Mold, Water, Biohazard &amp; Fire Cleanup Across Atlanta
+          Same-Day Water, Fire, Microbial &amp; Trauma Restoration Across Atlanta
+        </motion.p>
+
+        {/* IICRC Authority Line */}
+        <motion.p
+          variants={fadeUpHero}
+          className="mb-4 text-xs sm:text-sm text-gray-400 tracking-wide uppercase"
+        >
+          IICRC-aligned restoration practices for water, fire, and microbial remediation.
         </motion.p>
 
         {/* Trust Line */}

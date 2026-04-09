@@ -14,7 +14,7 @@ const credentials = [
 
 const aboutText = [
   'Brian W. Miller is the founder and lead practitioner at Act of Valor, bringing over a decade of specialized expertise in emergency restoration and trauma scene management. His approach combines technical certification with genuine compassion for families in crisis.',
-  'With certifications across water restoration, mold remediation, fire damage recovery, and trauma scene cleanup, Brian ensures every project meets industry standards while respecting the sensitive nature of each situation. His commitment to continuing education and professional development keeps Act of Valor at the forefront of restoration practices.',
+  'With certifications across water damage restoration, structural drying, microbial remediation, fire and smoke recovery, and trauma scene restoration, Brian ensures every project meets IICRC standards while respecting the sensitive nature of each situation. His commitment to continuing education and professional development keeps Act of Valor at the forefront of restoration practices.',
   'Trusted by law enforcement, insurance adjusters, and Atlanta-area families, Brian has built Act of Valor on the principle of immediate, professional, and compassionate response—because in a crisis, you need someone who understands both the technical work and the human impact.',
 ];
 

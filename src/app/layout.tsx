@@ -4,14 +4,14 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
-  title: "Mold Remediation & Emergency Restoration Atlanta | Act of Valor",
+  title: "Water, Fire & Microbial Restoration Atlanta | Act of Valor",
   description:
-    "Act of Valor provides same-day mold remediation, water damage cleanup, biohazard cleanup, and fire damage restoration in Atlanta, Sandy Springs, Marietta, Douglasville, and Buckhead. Call now for immediate help.",
+    "Act of Valor provides same-day water damage restoration, structural drying, microbial remediation, fire and smoke restoration, and trauma scene restoration in Atlanta, Sandy Springs, Marietta, Douglasville, and Buckhead. IICRC-aligned. Call now.",
   robots: "index, follow",
   openGraph: {
     title: "Act of Valor — Emergency Restoration Services Atlanta",
     description:
-      "Same-day mold, water, biohazard & fire cleanup across Atlanta. Trusted by law enforcement. Call now for immediate help.",
+      "Same-day water, fire, microbial & trauma restoration across Atlanta. IICRC-aligned. Call now for immediate help.",
     type: "website",
     url: "https://actofvalorllc.com",
     locale: "en_US",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Act of Valor — Emergency Restoration Atlanta",
     description:
-      "Same-day mold, water, biohazard & fire cleanup across Atlanta. Trusted by families and law enforcement.",
+      "Same-day water, fire, microbial & trauma restoration across Atlanta. Trusted by families and law enforcement.",
   },
   alternates: {
     canonical: "https://actofvalorllc.com/",
@@ -52,7 +52,7 @@ export default function RootLayout({
               "@type": "LocalBusiness",
               name: "Act of Valor",
               description:
-                "Emergency restoration services including mold remediation, water damage cleanup, biohazard cleanup, and fire damage restoration in Atlanta, GA.",
+                "IICRC-aligned emergency restoration services including water damage restoration, structural drying, microbial remediation, fire and smoke restoration, and trauma scene restoration in Atlanta, GA.",
               telephone: "(470) 881-9911",
               email: "info@actofvalorllc.com",
               url: "https://actofvalorllc.com",
@@ -91,28 +91,35 @@ export default function RootLayout({
                     "@type": "Offer",
                     itemOffered: {
                       "@type": "Service",
-                      name: "Mold Remediation Atlanta",
+                      name: "Water Damage Restoration Atlanta",
                     },
                   },
                   {
                     "@type": "Offer",
                     itemOffered: {
                       "@type": "Service",
-                      name: "Water Damage Cleanup Atlanta",
+                      name: "Structural Drying Atlanta",
                     },
                   },
                   {
                     "@type": "Offer",
                     itemOffered: {
                       "@type": "Service",
-                      name: "Biohazard Cleanup Atlanta",
+                      name: "Microbial Remediation Atlanta",
                     },
                   },
                   {
                     "@type": "Offer",
                     itemOffered: {
                       "@type": "Service",
-                      name: "Fire Damage Restoration Atlanta",
+                      name: "Fire and Smoke Damage Restoration Atlanta",
+                    },
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Trauma and Crime Scene Restoration Atlanta",
                     },
                   },
                 ],
@@ -135,18 +142,18 @@ export default function RootLayout({
               mainEntity: [
                 {
                   "@type": "Question",
-                  name: "Do you offer same-day mold remediation in Atlanta?",
+                  name: "Do you offer same-day water damage restoration in Atlanta?",
                   acceptedAnswer: {
                     "@type": "Answer",
-                    text: "Yes. Act of Valor provides same-day mold remediation across Atlanta and the surrounding metro area including Sandy Springs, Marietta, Douglasville, and Buckhead.",
+                    text: "Yes. Act of Valor provides same-day water damage restoration and structural drying across Atlanta and the surrounding metro area including Sandy Springs, Marietta, Douglasville, and Buckhead.",
                   },
                 },
                 {
                   "@type": "Question",
-                  name: "Do you handle biohazard and trauma cleanup?",
+                  name: "Do you handle trauma and crime scene restoration?",
                   acceptedAnswer: {
                     "@type": "Answer",
-                    text: "Yes. We provide discreet, respectful trauma and biohazard cleanup services with full restoration. We work closely with law enforcement and local professionals.",
+                    text: "Yes. We provide discreet, certified trauma and crime scene restoration services. We work closely with law enforcement and local professionals with full OSHA and DOT compliance.",
                   },
                 },
                 {

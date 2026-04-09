@@ -181,10 +181,11 @@ export default function ContactForm() {
                       className="w-full px-4 py-3 border border-[var(--color-border-default)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--color-navy)] text-[var(--color-content-primary)] bg-[var(--color-surface-card)]"
                     >
                       <option value="">Select a service type</option>
-                      <option value="mold">Mold Damage</option>
-                      <option value="water">Water Damage</option>
-                      <option value="biohazard">Biohazard/Trauma</option>
-                      <option value="fire">Fire Damage</option>
+                      <option value="water">Water Damage Restoration</option>
+                      <option value="structural-drying">Structural Drying</option>
+                      <option value="microbial">Microbial Remediation</option>
+                      <option value="fire">Fire &amp; Smoke Restoration</option>
+                      <option value="trauma">Trauma / Crime Scene</option>
                       <option value="other">Other</option>
                     </select>
                   </div>

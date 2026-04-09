@@ -75,10 +75,11 @@ export default function Footer() {
             <div>
               <h4 className="font-semibold text-base mb-4">Services</h4>
               <ul className="space-y-3">
-                <li><a href="#services" className="text-sm text-gray-300 hover:text-[var(--color-brand-primary)] transition-colors">Mold Removal</a></li>
-                <li><a href="#services" className="text-sm text-gray-300 hover:text-[var(--color-brand-primary)] transition-colors">Water Damage</a></li>
-                <li><a href="#services" className="text-sm text-gray-300 hover:text-[var(--color-brand-primary)] transition-colors">Biohazard Cleanup</a></li>
-                <li><a href="#services" className="text-sm text-gray-300 hover:text-[var(--color-brand-primary)] transition-colors">Fire Restoration</a></li>
+                <li><a href="#services" className="text-sm text-gray-300 hover:text-[var(--color-brand-primary)] transition-colors">Water Damage Restoration</a></li>
+                <li><a href="#services" className="text-sm text-gray-300 hover:text-[var(--color-brand-primary)] transition-colors">Structural Drying</a></li>
+                <li><a href="#services" className="text-sm text-gray-300 hover:text-[var(--color-brand-primary)] transition-colors">Microbial Remediation</a></li>
+                <li><a href="#services" className="text-sm text-gray-300 hover:text-[var(--color-brand-primary)] transition-colors">Fire &amp; Smoke Restoration</a></li>
+                <li><a href="#services" className="text-sm text-gray-300 hover:text-[var(--color-brand-primary)] transition-colors">Trauma &amp; Crime Scene</a></li>
               </ul>
             </div>
 
