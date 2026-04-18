@@ -5,7 +5,7 @@ import { fadeUp, staggerContainer } from '@/lib/motion';
 import { SITE } from '@/lib/constants';
 
 const credentials = [
-  'GA Trauma Scene Waste Management Practitioner',
+  'Georgia Trauma Scene Waste Management Company',
   'IICRC Certified — Water, Mold, Fire, Drying',
   'Georgia Property & Casualty Adjuster',
   'Lead-Safe Renovator Certified',
@@ -109,13 +109,13 @@ export default function About() {
               href="#contact"
               className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 bg-[var(--color-navy)] text-[var(--color-content-inverse)] font-bold text-base sm:text-lg rounded-lg hover:opacity-90 transition-all duration-300 active:scale-95"
             >
-              Request Same-Day Service
+              Request Immediate Help (2-Minute Form)
             </a>
             <a
               href={SITE.phoneHref}
               className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 border-2 border-[var(--color-navy)] text-[var(--color-navy)] font-bold text-base sm:text-lg rounded-lg hover:bg-[var(--color-navy)] hover:text-[var(--color-content-inverse)] transition-all duration-300"
             >
-              {SITE.phone}
+              Call Now — Immediate Response
             </a>
           </div>
         </motion.div>

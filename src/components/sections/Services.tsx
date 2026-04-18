@@ -32,7 +32,8 @@ export default function Services() {
             className="mx-auto max-w-2xl text-lg text-[var(--color-content-secondary)]"
           >
             Act of Valor provides same-day emergency response for water, structural drying,
-            microbial, fire, and trauma restoration across Cobb County and the Atlanta metro.
+            microbial, fire, and trauma restoration across Cobb County — Marietta, Smyrna,
+            Kennesaw — and the greater Atlanta metro.
           </motion.p>
         </div>
 

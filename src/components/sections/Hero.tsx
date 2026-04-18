@@ -87,15 +87,15 @@ export default function Hero() {
         >
           <a
             href="#contact"
-            className="inline-flex items-center justify-center px-8 py-4 bg-[var(--color-brand-primary)] hover:bg-[var(--color-brand-primary-hover)] text-[var(--color-navy)] font-bold rounded-lg transition-colors duration-200 text-lg"
+            className="inline-flex items-center justify-center px-8 py-4 bg-[var(--color-brand-primary)] hover:bg-[var(--color-brand-primary-hover)] text-[var(--color-navy)] font-bold rounded-lg transition-colors duration-200 text-base sm:text-lg"
           >
-            Request Same-Day Service
+            Request Immediate Help (2-Minute Form)
           </a>
           <a
             href={SITE.phoneHref}
             className="inline-flex items-center justify-center px-8 py-4 border-2 border-[var(--color-content-inverse)] hover:bg-[var(--color-content-inverse)] hover:text-[var(--color-navy)] text-[var(--color-content-inverse)] font-bold rounded-lg transition-colors duration-200"
           >
-            Call Now
+            Call Now — Immediate Response
           </a>
         </motion.div>
 

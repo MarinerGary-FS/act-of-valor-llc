@@ -10,7 +10,7 @@ export const SITE = {
     instagram: 'https://www.instagram.com/ceoglm/',
     tiktok: 'https://www.tiktok.com/@ceoglm',
   },
-  serviceAreas: ['Cobb County', 'Atlanta', 'Marietta', 'Sandy Springs', 'Douglasville', 'Buckhead'],
+  serviceAreas: ['Cobb County', 'Marietta', 'Smyrna', 'Kennesaw', 'Atlanta', 'Sandy Springs', 'Douglasville', 'Buckhead'],
   hours: '24/7 Emergency Response',
 } as const;
 

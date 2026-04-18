@@ -1,4 +1,5 @@
 import Hero from "@/components/sections/Hero";
+import GeoDominance from "@/components/sections/GeoDominance";
 import TrustSection from "@/components/sections/TrustSection";
 import Services from "@/components/sections/Services";
 import CTABlock from "@/components/sections/CTABlock";
@@ -31,6 +32,9 @@ export default function Home() {
     <>
       {/* 1. HERO — Primary conversion entry */}
       <Hero />
+
+      {/* 1a. GEO DOMINANCE — Local SEO reinforcement under hero */}
+      <GeoDominance />
 
       {/* 2. TRUST — Social proof near hero (CONVERSION_ENGINE.md) */}
       <TrustSection />
