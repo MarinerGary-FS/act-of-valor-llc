@@ -25,19 +25,19 @@ export default function Authority() {
             variants={fadeUp}
             className="mb-4 text-3xl sm:text-4xl lg:text-5xl font-bold text-[var(--color-content-inverse)]"
           >
-            Licensed. Certified. Prepared.
+            Professional Biohazard &amp; Crime Scene Cleanup in Cobb County
           </motion.h2>
           <motion.p
             variants={fadeUp}
             className="mx-auto max-w-2xl text-lg text-gray-300"
           >
-            Every credential reflects our commitment to professional excellence and your safety.
+            Every credential reflects our commitment to professional excellence, regulatory compliance, and your safety.
           </motion.p>
         </div>
 
         {/* Authority Blocks Grid */}
         <motion.div
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
+          className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8"
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"

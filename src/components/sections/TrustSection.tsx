@@ -37,7 +37,7 @@ export default function TrustSection() {
             </div>
 
             <h2 className="mb-6 text-3xl sm:text-4xl lg:text-5xl font-bold text-[var(--color-navy)]">
-              Why Atlanta Trusts Act of Valor
+              Same-Day Trauma &amp; Water Damage Response in Georgia
             </h2>
 
             <p className="mb-8 text-lg sm:text-xl italic text-[var(--color-content-secondary)]">
@@ -45,7 +45,7 @@ export default function TrustSection() {
             </p>
 
             <p className="mb-10 text-base sm:text-lg text-[var(--color-content-secondary)] leading-relaxed">
-              When disaster strikes, Act of Valor is there—not just to clean up, but to restore peace of mind. Our team combines professional expertise with genuine compassion, treating every crisis as if it were our own family&apos;s emergency.
+              When disaster strikes in Cobb County or the wider Atlanta metro, Act of Valor is there—not just to remediate, but to restore peace of mind. Our team combines professional expertise with genuine compassion, treating every crisis as if it were our own family&apos;s emergency.
             </p>
 
             <ul className="space-y-4">

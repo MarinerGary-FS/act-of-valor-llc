@@ -10,7 +10,7 @@ export const SITE = {
     instagram: 'https://www.instagram.com/ceoglm/',
     tiktok: 'https://www.tiktok.com/@ceoglm',
   },
-  serviceAreas: ['Atlanta', 'Sandy Springs', 'Marietta', 'Douglasville', 'Buckhead'],
+  serviceAreas: ['Cobb County', 'Atlanta', 'Marietta', 'Sandy Springs', 'Douglasville', 'Buckhead'],
   hours: '24/7 Emergency Response',
 } as const;
 
@@ -156,27 +156,43 @@ export const CREDENTIALS = [
 export const AUTHORITY_BLOCKS = [
   {
     icon: '💧',
-    title: 'Water & Structural Drying',
-    licenses: ['WRT - Water Restoration', 'ASD - Structural Drying', 'FSRT - Fire & Smoke'],
-    footnote: 'IICRC-certified technicians for water, drying, and fire damage restoration.',
-  },
-  {
-    icon: '🔬',
-    title: 'Microbial & Environmental',
-    licenses: ['AMRT - Microbial Remediation', 'Air Quality Assessment', 'Contamination Protocols'],
-    footnote: 'Science-backed microbial remediation and environmental restoration.',
+    title: 'Restoration (IICRC)',
+    licenses: [
+      'WRT — Water Remediation Technician',
+      'ASD — Applied Structural Drying Technician',
+      'FSRT — Fire & Smoke Restoration Technician',
+    ],
+    footnote: 'IICRC-certified technicians for water, structural drying, and fire damage restoration.',
   },
   {
     icon: '🛡️',
-    title: 'Trauma & Crime Scene',
-    licenses: ['OSHA Certified', 'DOT Compliant', 'Crime Scene Trained'],
-    footnote: 'Discreet, compassionate restoration with certified handling and disposal.',
+    title: 'Biohazard & Trauma',
+    licenses: [
+      'TCST — Trauma Crime Scene Technician',
+      'OSHA Certified',
+      'DOT Compliant — Biohazard Transport',
+    ],
+    footnote: 'Discreet, certified trauma and crime scene restoration with full regulatory handling.',
+  },
+  {
+    icon: '🔬',
+    title: 'Environmental & Safety',
+    licenses: [
+      'AMRT — Applied Microbial Remediation Technician',
+      'Air Quality Assessment',
+      'Contamination Control Protocols',
+    ],
+    footnote: 'Science-backed microbial remediation and environmental restoration.',
   },
   {
     icon: '📋',
     title: 'Property & Insurance',
-    licenses: ['Insurance-Ready Documentation', 'Georgia Licensed', 'Lead-Safe Certified'],
-    footnote: 'Work directly with your insurer. We handle all claims documentation.',
+    licenses: [
+      'Georgia Insurance Adjuster License #2805709',
+      'Insurance-Ready Documentation',
+      'Lead-Safe Renovator Certified',
+    ],
+    footnote: 'Work directly with your insurer. We handle all claims documentation end-to-end.',
   },
 ] as const;
 

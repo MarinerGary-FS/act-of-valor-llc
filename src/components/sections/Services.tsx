@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { fadeUp, staggerContainer } from '@/lib/motion';
-import { SERVICES, SITE } from '@/lib/constants';
+import { SERVICES } from '@/lib/constants';
 
 export default function Services() {
   return (
@@ -25,14 +25,14 @@ export default function Services() {
             variants={fadeUp}
             className="mb-4 text-3xl sm:text-4xl lg:text-5xl font-bold text-[var(--color-navy)]"
           >
-            What Can We Help You With?
+            Emergency Biohazard Cleanup in Cobb County
           </motion.h2>
           <motion.p
             variants={fadeUp}
             className="mx-auto max-w-2xl text-lg text-[var(--color-content-secondary)]"
           >
-            Act of Valor provides same-day emergency response for mold, water,
-            trauma, and fire damage across Atlanta metro.
+            Act of Valor provides same-day emergency response for water, structural drying,
+            microbial, fire, and trauma restoration across Cobb County and the Atlanta metro.
           </motion.p>
         </div>
 
@@ -88,9 +88,9 @@ export default function Services() {
                 ))}
               </ul>
 
-              {/* CTA Button */}
+              {/* CTA Button — Routes to contact form */}
               <a
-                href={SITE.phoneHref}
+                href="#contact"
                 className="block w-full rounded-lg bg-[var(--color-navy)] hover:bg-[var(--color-charcoal)] text-[var(--color-content-inverse)] font-semibold py-3 px-4 text-center transition-colors duration-200"
               >
                 {service.cta}

@@ -4,23 +4,34 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
-  title: "Water, Fire & Microbial Restoration Atlanta | Act of Valor",
+  title: "Trauma Cleanup & Biohazard Remediation in Cobb County, Georgia | Act of Valor",
   description:
-    "Act of Valor provides same-day water damage restoration, structural drying, microbial remediation, fire and smoke restoration, and trauma scene restoration in Atlanta, Sandy Springs, Marietta, Douglasville, and Buckhead. IICRC-aligned. Call now.",
+    "Act of Valor — Georgia Trauma Scene Waste Management Company. Same-day crime scene cleanup, biohazard remediation, water damage restoration, structural drying, and fire restoration in Cobb County and across Georgia. IICRC-aligned. Call (470) 881-9911.",
+  keywords: [
+    "cobb county trauma cleanup",
+    "crime scene cleanup cobb county",
+    "biohazard cleanup georgia",
+    "trauma waste management georgia",
+    "emergency cleanup services cobb county",
+    "water damage restoration atlanta",
+    "structural drying georgia",
+    "microbial remediation atlanta",
+    "fire and smoke restoration cobb county",
+  ],
   robots: "index, follow",
   openGraph: {
-    title: "Act of Valor — Emergency Restoration Services Atlanta",
+    title: "Act of Valor — Trauma Cleanup & Biohazard Remediation in Cobb County, Georgia",
     description:
-      "Same-day water, fire, microbial & trauma restoration across Atlanta. IICRC-aligned. Call now for immediate help.",
+      "Georgia Trauma Scene Waste Management Company. Same-day crime scene cleanup, biohazard remediation, and water damage restoration across Cobb County. Call now.",
     type: "website",
     url: "https://actofvalorllc.com",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Act of Valor — Emergency Restoration Atlanta",
+    title: "Act of Valor — Trauma & Biohazard Remediation Cobb County",
     description:
-      "Same-day water, fire, microbial & trauma restoration across Atlanta. Trusted by families and law enforcement.",
+      "Georgia-licensed trauma scene waste management. Same-day biohazard, water, fire, and microbial remediation across Cobb County and the Atlanta metro.",
   },
   alternates: {
     canonical: "https://actofvalorllc.com/",
@@ -63,9 +74,11 @@ export default function RootLayout({
                 addressCountry: "US",
               },
               areaServed: [
+                { "@type": "AdministrativeArea", name: "Cobb County, Georgia" },
+                { "@type": "State", name: "Georgia" },
                 { "@type": "City", name: "Atlanta" },
-                { "@type": "City", name: "Sandy Springs" },
                 { "@type": "City", name: "Marietta" },
+                { "@type": "City", name: "Sandy Springs" },
                 { "@type": "City", name: "Douglasville" },
                 { "@type": "City", name: "Buckhead" },
               ],

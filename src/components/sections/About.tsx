@@ -21,6 +21,28 @@ const aboutText = [
 export default function About() {
   return (
     <section id="about" className="bg-[var(--color-surface-card)] py-16 sm:py-20 px-4 sm:px-6 lg:px-8">
+      {/* Authority Headline — State Licensing Positioning */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: '-100px' }}
+        transition={{ duration: 0.5, ease: [0.4, 0, 0.2, 1] }}
+        className="max-w-6xl mx-auto mb-12 text-center"
+      >
+        <div className="inline-flex items-center gap-2 mb-3 px-4 py-1.5 rounded-full border border-[var(--color-brand-primary)] bg-[var(--color-brand-primary)]/5">
+          <span className="inline-block w-1.5 h-1.5 rounded-full bg-[var(--color-brand-primary)]" />
+          <span className="text-xs font-semibold uppercase tracking-widest text-[var(--color-brand-primary)]">
+            State Licensed
+          </span>
+        </div>
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[var(--color-navy)] leading-tight">
+          Georgia Trauma Scene Waste Management Company
+        </h2>
+        <p className="mt-3 max-w-2xl mx-auto text-base text-[var(--color-content-secondary)]">
+          Fully licensed by the State of Georgia for trauma scene waste management — authorized for certified biohazard handling, disposal, and remediation operations statewide.
+        </p>
+      </motion.div>
+
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -82,12 +104,20 @@ export default function About() {
             ))}
           </div>
 
-          <a
-            href={SITE.phoneHref}
-            className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 bg-[var(--color-navy)] text-[var(--color-content-inverse)] font-bold text-base sm:text-lg rounded-lg hover:opacity-90 transition-all duration-300 active:scale-95 w-fit"
-          >
-            Call Our Team — {SITE.phone}
-          </a>
+          <div className="flex flex-col sm:flex-row gap-4 w-fit">
+            <a
+              href="#contact"
+              className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 bg-[var(--color-navy)] text-[var(--color-content-inverse)] font-bold text-base sm:text-lg rounded-lg hover:opacity-90 transition-all duration-300 active:scale-95"
+            >
+              Request Same-Day Service
+            </a>
+            <a
+              href={SITE.phoneHref}
+              className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 border-2 border-[var(--color-navy)] text-[var(--color-navy)] font-bold text-base sm:text-lg rounded-lg hover:bg-[var(--color-navy)] hover:text-[var(--color-content-inverse)] transition-all duration-300"
+            >
+              {SITE.phone}
+            </a>
+          </div>
         </motion.div>
       </motion.div>
     </section>

@@ -40,13 +40,13 @@ export default function Hero() {
           </span>
         </motion.div>
 
-        {/* Main Heading */}
+        {/* Main Heading — Primary H1 (unique) */}
         <motion.h1
           variants={fadeUpHero}
           className="mb-6 text-4xl sm:text-5xl lg:text-6xl font-bold text-[var(--color-content-inverse)] leading-tight"
         >
-          When the unexpected happens,{' '}
-          <span className="text-[var(--color-brand-primary)]">you&apos;re not alone.</span>
+          Trauma Cleanup &amp; Biohazard Remediation in{' '}
+          <span className="text-[var(--color-brand-primary)]">Cobb County, Georgia</span>
         </motion.h1>
 
         {/* Subtext */}
@@ -54,7 +54,7 @@ export default function Hero() {
           variants={fadeUpHero}
           className="mb-8 text-lg sm:text-xl text-gray-200"
         >
-          Same-Day Water, Fire, Microbial &amp; Trauma Restoration Across Atlanta
+          Same-day water, fire, microbial &amp; trauma restoration across Cobb County and the Atlanta metro area.
         </motion.p>
 
         {/* IICRC Authority Line */}
@@ -80,24 +80,32 @@ export default function Hero() {
           <span>Licensed. Certified. Trusted by families, property managers, and law enforcement partners.</span>
         </motion.div>
 
-        {/* CTA Group */}
+        {/* CTA Group — Primary routes to form, secondary to phone */}
         <motion.div
           variants={fadeUpHero}
-          className="mb-8 flex flex-col sm:flex-row gap-4 justify-center"
+          className="mb-4 flex flex-col sm:flex-row gap-4 justify-center"
         >
           <a
-            href={SITE.phoneHref}
-            className="inline-flex items-center justify-center px-8 py-4 bg-[var(--color-brand-primary)] hover:bg-[var(--color-brand-primary-hover)] text-[var(--color-navy)] font-bold rounded-lg transition-colors duration-200 text-lg"
-          >
-            Call Now — Immediate Help
-          </a>
-          <a
             href="#contact"
-            className="inline-flex items-center justify-center px-8 py-4 border-2 border-[var(--color-content-inverse)] hover:bg-[var(--color-content-inverse)] hover:text-[var(--color-navy)] text-[var(--color-content-inverse)] font-bold rounded-lg transition-colors duration-200"
+            className="inline-flex items-center justify-center px-8 py-4 bg-[var(--color-brand-primary)] hover:bg-[var(--color-brand-primary-hover)] text-[var(--color-navy)] font-bold rounded-lg transition-colors duration-200 text-lg"
           >
             Request Same-Day Service
           </a>
+          <a
+            href={SITE.phoneHref}
+            className="inline-flex items-center justify-center px-8 py-4 border-2 border-[var(--color-content-inverse)] hover:bg-[var(--color-content-inverse)] hover:text-[var(--color-navy)] text-[var(--color-content-inverse)] font-bold rounded-lg transition-colors duration-200"
+          >
+            Call Now
+          </a>
         </motion.div>
+
+        {/* Urgency Microcopy */}
+        <motion.p
+          variants={fadeUpHero}
+          className="mb-4 text-sm font-semibold text-[var(--color-brand-primary)]"
+        >
+          Request Immediate Assistance — Response Within Minutes
+        </motion.p>
 
         {/* Reassurance Line */}
         <motion.p variants={fadeUpHero} className="mb-16 text-base text-gray-300">

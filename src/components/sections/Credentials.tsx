@@ -29,13 +29,13 @@ export default function Credentials() {
             variants={fadeUp}
             className="mb-4 text-3xl sm:text-4xl lg:text-5xl font-bold text-[var(--color-navy)]"
           >
-            Every License. Every Certification.
+            Cobb County Crime Scene Cleanup Services
           </motion.h2>
           <motion.p
             variants={fadeUp}
             className="mx-auto max-w-2xl text-lg text-[var(--color-content-secondary)]"
           >
-            Our team is fully licensed and certified by industry-leading organizations. Trust in expertise that matters.
+            Every license. Every certification. Our team is fully credentialed by industry-leading organizations for trauma scene waste management, biohazard remediation, and restoration across Georgia.
           </motion.p>
         </div>
 

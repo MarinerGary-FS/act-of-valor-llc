@@ -39,19 +39,26 @@ export default function CTABlock({
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center">
-          <a
-            href={SITE.phoneHref}
-            className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 bg-[var(--color-brand-primary)] text-[var(--color-navy)] font-bold text-base sm:text-lg rounded-lg hover:bg-[var(--color-brand-primary-hover)] transition-colors duration-300 whitespace-nowrap"
-          >
-            Call Now — Immediate Help
-          </a>
+          {/* Primary CTA — routes to form */}
           <a
             href="#contact"
-            className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 border-2 border-[var(--color-content-inverse)] text-[var(--color-content-inverse)] font-bold text-base sm:text-lg rounded-lg hover:bg-[var(--color-content-inverse)] hover:text-[var(--color-navy)] transition-colors duration-300 whitespace-nowrap"
+            className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 bg-[var(--color-brand-primary)] text-[var(--color-navy)] font-bold text-base sm:text-lg rounded-lg hover:bg-[var(--color-brand-primary-hover)] transition-colors duration-300 whitespace-nowrap"
           >
             Request Same-Day Service
           </a>
+          {/* Secondary CTA — phone fallback */}
+          <a
+            href={SITE.phoneHref}
+            className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 border-2 border-[var(--color-content-inverse)] text-[var(--color-content-inverse)] font-bold text-base sm:text-lg rounded-lg hover:bg-[var(--color-content-inverse)] hover:text-[var(--color-navy)] transition-colors duration-300 whitespace-nowrap"
+          >
+            Call Now
+          </a>
         </div>
+
+        {/* Urgency microcopy */}
+        <p className="mt-6 text-sm text-[var(--color-brand-primary)] font-medium">
+          Same-Day Emergency Cleanup Available
+        </p>
       </motion.div>
     </section>
   );
