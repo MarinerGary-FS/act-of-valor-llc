@@ -1,8 +1,16 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { SITE } from "@/lib/constants";
 import AttributionCredit from "@/components/ui/AttributionCredit";
+
+const SERVICE_AREA_LINKS: ReadonlyArray<{ label: string; href: string }> = [
+  { label: "Cobb County", href: "/cobb-county" },
+  { label: "Marietta", href: "/marietta" },
+  { label: "Smyrna", href: "/smyrna" },
+  { label: "Kennesaw", href: "/kennesaw" },
+];
 
 export default function Footer() {
   return (
@@ -14,12 +22,24 @@ export default function Footer() {
             SERVICE AREAS
           </p>
           <div className="flex flex-wrap gap-3 md:gap-6 justify-center md:justify-start">
-            {SITE.serviceAreas.map((area) => (
-              <div key={area} className="flex items-center gap-1.5">
-                <span className="w-2 h-2 rounded-full bg-[var(--color-brand-primary)]" />
-                <span className="text-sm">{area}</span>
-              </div>
-            ))}
+            {SITE.serviceAreas.map((area) => {
+              const linked = SERVICE_AREA_LINKS.find((l) => l.label === area);
+              return (
+                <div key={area} className="flex items-center gap-1.5">
+                  <span className="w-2 h-2 rounded-full bg-[var(--color-brand-primary)]" />
+                  {linked ? (
+                    <Link
+                      href={linked.href}
+                      className="text-sm hover:text-[var(--color-brand-primary)] transition-colors"
+                    >
+                      {area}
+                    </Link>
+                  ) : (
+                    <span className="text-sm">{area}</span>
+                  )}
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
@@ -75,11 +95,11 @@ export default function Footer() {
             <div>
               <h4 className="font-semibold text-base mb-4">Services</h4>
               <ul className="space-y-3">
-                <li><a href="#services" className="text-sm text-gray-300 hover:text-[var(--color-brand-primary)] transition-colors">Water Damage Restoration</a></li>
-                <li><a href="#services" className="text-sm text-gray-300 hover:text-[var(--color-brand-primary)] transition-colors">Structural Drying</a></li>
-                <li><a href="#services" className="text-sm text-gray-300 hover:text-[var(--color-brand-primary)] transition-colors">Microbial Remediation</a></li>
-                <li><a href="#services" className="text-sm text-gray-300 hover:text-[var(--color-brand-primary)] transition-colors">Fire &amp; Smoke Restoration</a></li>
-                <li><a href="#services" className="text-sm text-gray-300 hover:text-[var(--color-brand-primary)] transition-colors">Trauma &amp; Crime Scene</a></li>
+                <li><Link href="/#services" className="text-sm text-gray-300 hover:text-[var(--color-brand-primary)] transition-colors">Water Damage Restoration</Link></li>
+                <li><Link href="/#services" className="text-sm text-gray-300 hover:text-[var(--color-brand-primary)] transition-colors">Structural Drying</Link></li>
+                <li><Link href="/#services" className="text-sm text-gray-300 hover:text-[var(--color-brand-primary)] transition-colors">Microbial Remediation</Link></li>
+                <li><Link href="/#services" className="text-sm text-gray-300 hover:text-[var(--color-brand-primary)] transition-colors">Fire &amp; Smoke Restoration</Link></li>
+                <li><Link href="/#services" className="text-sm text-gray-300 hover:text-[var(--color-brand-primary)] transition-colors">Trauma &amp; Crime Scene</Link></li>
               </ul>
             </div>
 
@@ -87,10 +107,10 @@ export default function Footer() {
             <div>
               <h4 className="font-semibold text-base mb-4">Quick Links</h4>
               <ul className="space-y-3">
-                <li><a href="#services" className="text-sm text-gray-300 hover:text-[var(--color-brand-primary)] transition-colors">Services</a></li>
-                <li><a href="#about" className="text-sm text-gray-300 hover:text-[var(--color-brand-primary)] transition-colors">About Us</a></li>
-                <li><a href="#credentials" className="text-sm text-gray-300 hover:text-[var(--color-brand-primary)] transition-colors">Credentials</a></li>
-                <li><a href="#contact" className="text-sm text-gray-300 hover:text-[var(--color-brand-primary)] transition-colors">Contact</a></li>
+                <li><Link href="/#services" className="text-sm text-gray-300 hover:text-[var(--color-brand-primary)] transition-colors">Services</Link></li>
+                <li><Link href="/#about" className="text-sm text-gray-300 hover:text-[var(--color-brand-primary)] transition-colors">About Us</Link></li>
+                <li><Link href="/#authority" className="text-sm text-gray-300 hover:text-[var(--color-brand-primary)] transition-colors">Credentials</Link></li>
+                <li><Link href="/#contact" className="text-sm text-gray-300 hover:text-[var(--color-brand-primary)] transition-colors">Contact</Link></li>
               </ul>
             </div>
 

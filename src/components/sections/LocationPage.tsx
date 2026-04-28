@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { fadeUp, fadeUpHero, staggerContainer } from '@/lib/motion';
 import { SITE, SERVICES } from '@/lib/constants';
@@ -13,6 +14,11 @@ export interface LocationPageProps {
   intro: string;
   /** Optional list of neighborhoods / sub-areas covered */
   neighborhoods?: readonly string[];
+  /**
+   * Canonical absolute URL for this location page — used for BreadcrumbList
+   * JSON-LD and (in the future) any inline schema that needs the page URL.
+   */
+  canonicalUrl: string;
 }
 
 /**
@@ -25,9 +31,56 @@ export default function LocationPage({
   localityContext,
   intro,
   neighborhoods,
+  canonicalUrl,
 }: LocationPageProps) {
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Home',
+        item: 'https://actofvalorllc.com/',
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: locationName,
+        item: canonicalUrl,
+      },
+    ],
+  };
+
+  const serviceSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: `Emergency Restoration Services in ${locationName}`,
+    serviceType: 'Trauma cleanup, biohazard remediation, water damage restoration, structural drying, microbial remediation, fire and smoke restoration',
+    provider: {
+      '@type': 'LocalBusiness',
+      name: 'Act of Valor',
+      url: 'https://actofvalorllc.com',
+      telephone: SITE.phone,
+    },
+    areaServed: {
+      '@type': 'Place',
+      name: localityContext ? `${locationName}, ${localityContext}` : locationName,
+    },
+    url: canonicalUrl,
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
+
       {/* HERO — location-specific H1 */}
       <section className="relative w-full overflow-hidden bg-gradient-to-b from-[var(--color-navy)] via-[var(--color-navy-light)] to-[var(--color-navy-mid)] py-20 sm:py-28 lg:py-32">
         <motion.div
@@ -71,12 +124,12 @@ export default function LocationPage({
             variants={fadeUpHero}
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
-            <a
+            <Link
               href="/#contact"
               className="inline-flex items-center justify-center px-8 py-4 bg-[var(--color-brand-primary)] hover:bg-[var(--color-brand-primary-hover)] text-[var(--color-navy)] font-bold rounded-lg transition-colors duration-200 text-base sm:text-lg"
             >
               Request Immediate Help (2-Minute Form)
-            </a>
+            </Link>
             <a
               href={SITE.phoneHref}
               className="inline-flex items-center justify-center px-8 py-4 border-2 border-[var(--color-content-inverse)] hover:bg-[var(--color-content-inverse)] hover:text-[var(--color-navy)] text-[var(--color-content-inverse)] font-bold rounded-lg transition-colors duration-200"
@@ -182,12 +235,12 @@ export default function LocationPage({
             Our certified team is standing by for same-day response across {locationName}.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center">
-            <a
+            <Link
               href="/#contact"
               className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 bg-[var(--color-brand-primary)] text-[var(--color-navy)] font-bold text-base sm:text-lg rounded-lg hover:bg-[var(--color-brand-primary-hover)] transition-colors duration-300 whitespace-nowrap"
             >
               Request Immediate Help (2-Minute Form)
-            </a>
+            </Link>
             <a
               href={SITE.phoneHref}
               className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 border-2 border-[var(--color-content-inverse)] text-[var(--color-content-inverse)] font-bold text-base sm:text-lg rounded-lg hover:bg-[var(--color-content-inverse)] hover:text-[var(--color-navy)] transition-colors duration-300 whitespace-nowrap"

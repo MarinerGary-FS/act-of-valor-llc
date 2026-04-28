@@ -20,6 +20,7 @@ export default function CobbCountyPage() {
     <LocationPage
       locationName="Cobb County"
       localityContext="Georgia"
+      canonicalUrl="https://actofvalorllc.com/cobb-county"
       intro="Same-day emergency response across Cobb County — trauma scene cleanup, biohazard remediation, water damage restoration, structural drying, microbial remediation, and fire and smoke restoration. Georgia-licensed. IICRC-aligned."
       neighborhoods={[
         'Marietta',

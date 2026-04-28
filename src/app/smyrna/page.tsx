@@ -20,6 +20,7 @@ export default function SmyrnaPage() {
     <LocationPage
       locationName="Smyrna"
       localityContext="Cobb County, Georgia"
+      canonicalUrl="https://actofvalorllc.com/smyrna"
       intro="Same-day trauma and biohazard restoration, water damage response, structural drying, microbial remediation, and fire and smoke recovery for Smyrna residents and businesses. Discreet, certified, and insurance-ready."
       neighborhoods={[
         'Market Village',

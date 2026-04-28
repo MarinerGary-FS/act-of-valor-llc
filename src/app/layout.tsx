@@ -4,6 +4,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://actofvalorllc.com"),
   title: "Trauma Cleanup & Biohazard Remediation in Cobb County, Georgia | Act of Valor",
   description:
     "Act of Valor — Georgia Trauma Scene Waste Management Company. Same-day crime scene cleanup, biohazard remediation, water damage restoration, structural drying, and fire restoration in Cobb County and across Georgia. IICRC-aligned. Call (470) 881-9911.",
@@ -35,9 +36,6 @@ export const metadata: Metadata = {
     title: "Act of Valor — Trauma & Biohazard Remediation Cobb County",
     description:
       "Georgia-licensed trauma scene waste management. Same-day biohazard, water, fire, and microbial remediation across Cobb County and the Atlanta metro.",
-  },
-  alternates: {
-    canonical: "https://actofvalorllc.com/",
   },
 };
 

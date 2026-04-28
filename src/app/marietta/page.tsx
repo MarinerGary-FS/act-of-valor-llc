@@ -20,6 +20,7 @@ export default function MariettaPage() {
     <LocationPage
       locationName="Marietta"
       localityContext="Cobb County, Georgia"
+      canonicalUrl="https://actofvalorllc.com/marietta"
       intro="Trauma scene cleanup, biohazard remediation, water damage restoration, structural drying, microbial remediation, and fire and smoke restoration for Marietta residents and businesses. Fast, discreet, and certified."
       neighborhoods={[
         'East Cobb',

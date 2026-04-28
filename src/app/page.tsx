@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Hero from "@/components/sections/Hero";
 import GeoDominance from "@/components/sections/GeoDominance";
 import TrustSection from "@/components/sections/TrustSection";
@@ -9,6 +10,10 @@ import Credentials from "@/components/sections/Credentials";
 import Resources from "@/components/sections/Resources";
 import PublicSafety from "@/components/sections/PublicSafety";
 import ContactForm from "@/components/sections/ContactForm";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "https://actofvalorllc.com" },
+};
 
 /**
  * ACT OF VALOR — HOMEPAGE

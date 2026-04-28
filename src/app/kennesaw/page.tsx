@@ -20,6 +20,7 @@ export default function KennesawPage() {
     <LocationPage
       locationName="Kennesaw"
       localityContext="Cobb County, Georgia"
+      canonicalUrl="https://actofvalorllc.com/kennesaw"
       intro="Trauma and crime scene restoration, biohazard remediation, water damage response, structural drying, microbial remediation, and fire and smoke restoration for Kennesaw residents and businesses. Fast, discreet, and fully certified."
       neighborhoods={[
         'Downtown Kennesaw',
