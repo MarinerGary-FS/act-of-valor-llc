@@ -109,7 +109,7 @@ export default function About() {
               href="#contact"
               className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 bg-[var(--color-navy)] text-[var(--color-content-inverse)] font-bold text-base sm:text-lg rounded-lg hover:opacity-90 transition-all duration-300 active:scale-95"
             >
-              Request Immediate Help (2-Minute Form)
+              Request Immediate Help
             </a>
             <a
               href={SITE.phoneHref}

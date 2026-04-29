@@ -44,7 +44,7 @@ export default function CTABlock({
             href="#contact"
             className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 bg-[var(--color-brand-primary)] text-[var(--color-navy)] font-bold text-base sm:text-lg rounded-lg hover:bg-[var(--color-brand-primary-hover)] transition-colors duration-300 whitespace-nowrap"
           >
-            Request Immediate Help (2-Minute Form)
+            Request Immediate Help
           </a>
           {/* Secondary CTA — phone fallback */}
           <a

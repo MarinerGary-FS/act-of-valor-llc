@@ -89,7 +89,7 @@ export default function Hero() {
             href="#contact"
             className="inline-flex items-center justify-center px-8 py-4 bg-[var(--color-brand-primary)] hover:bg-[var(--color-brand-primary-hover)] text-[var(--color-navy)] font-bold rounded-lg transition-colors duration-200 text-base sm:text-lg"
           >
-            Request Immediate Help (2-Minute Form)
+            Request Immediate Help
           </a>
           <a
             href={SITE.phoneHref}
