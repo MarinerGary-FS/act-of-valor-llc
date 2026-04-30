@@ -50,7 +50,7 @@ export default function Home() {
       {/* 4. CTA BLOCK #1 — Post-services conversion reinforcement */}
       <CTABlock
         heading="Need Help Right Now?"
-        subtext="Our team is standing by — ready to respond same-day across Atlanta and the metro area."
+        subtext="Our team is available to discuss cleanup needs across Atlanta and the metro area."
       />
 
       {/* 5. ABOUT — Expert leadership */}

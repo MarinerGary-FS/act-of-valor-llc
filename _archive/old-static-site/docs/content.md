@@ -6,14 +6,14 @@ Headline:
 When the unexpected happens, you’re not alone.
 
 Subtext:
-Same-Day Mold, Water, Biohazard & Fire Cleanup Across Atlanta
+Mold, Water, Biohazard & Fire Cleanup Across Atlanta
 
 Trust Line:
-Licensed. Certified. Trusted by families, property managers, and law enforcement partners.
+Licensed. Certified. Trusted by families, property managers, and businesses.
 
 CTA:
-Call Now — Immediate Help  
-Request Same-Day Service
+Call Act of Valor
+Request Help
 
 ---
 
@@ -31,7 +31,7 @@ We respond fast to:
 - Safely remove contamination
 - Restore your space
 
-CTA: Get Same-Day Help
+CTA: Request Help
 
 ---
 
@@ -47,7 +47,7 @@ Our team will:
 - Prevent secondary damage like mold
 - Restore your property
 
-CTA: Get Immediate Help
+CTA: Request Help
 
 ---
 
@@ -93,10 +93,10 @@ We don’t just restore spaces—we help people move forward.
 
 When you’re dealing with unexpected damage or difficult situations, you need more than a service—you need a team you can trust.
 
-- Compassionate, respectful approach in every situation  
-- Trusted by local professionals and law enforcement partners  
-- Same-day response across the Atlanta metro area  
-- Licensed, certified, and equipped to handle complex situations  
+- Compassionate, respectful approach in every situation
+- Trusted by families, property managers, and businesses
+- Emergency cleanup calls answered across the Atlanta metro area
+- Licensed, certified, and equipped to handle complex situations
 
 ---
 
@@ -112,10 +112,10 @@ Act of Valor combines industry certifications, state licensing, and real-world e
 
 ### Biohazard & Trauma Authority
 
-- Georgia Trauma Scene Waste Management Company License  
-- Georgia Trauma Scene Waste Management Practitioner License (Brian W. Miller)  
+- Georgia-licensed trauma scene and biohazard cleanup support
+- Credential documentation available upon request
 
-State-authorized to handle trauma and biohazard cleanup in Georgia.
+Licensed in the State of Georgia for trauma and biohazard cleanup support.
 
 ---
 
@@ -179,9 +179,9 @@ Access important information to stay informed and prepared:
 ## PUBLIC SAFETY SECTION
 
 Headline:
-Atlanta Public Safety Updates
+Atlanta Public Safety Awareness
 
-Stay informed with relevant updates affecting the Atlanta metro area.
+General awareness for Atlanta-area families, businesses, and property managers evaluating professional trauma, biohazard, or hazardous cleanup support.
 
 ---
 
@@ -203,4 +203,4 @@ And nearby communities throughout the metro area.
 
 Need help now?
 
-Call us immediately or request same-day service. Our team is ready to respond.
+Call us or request cleanup support. Our team serves Atlanta and nearby communities.

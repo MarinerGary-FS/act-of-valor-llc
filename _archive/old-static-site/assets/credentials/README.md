@@ -9,8 +9,8 @@ Once placed, swap out the fallback badge elements in `index.html` per the commen
 
 | Filename | Display Label | Alt Text | Credential Group |
 |---|---|---|---|
-| `tswm-company-license.jpg` | State-Licensed Company | Georgia Trauma Scene Waste Management Company License | Biohazard & Trauma Authority |
-| `tswm-practitioner-license.jpg` | State-Licensed Practitioner | Georgia Trauma Scene Waste Management Practitioner License — Brian W. Miller | Biohazard & Trauma Authority |
+| `georgia-biohazard-readiness.jpg` | Georgia-Licensed Support | Georgia trauma scene and biohazard cleanup readiness | Biohazard & Trauma Authority |
+| `georgia-credential-documentation.jpg` | Documentation Available | Credential documentation available upon request | Biohazard & Trauma Authority |
 
 ---
 
@@ -36,9 +36,9 @@ Replace the `.credential-featured-badge` or `.credential-logo-badge` element wit
 
 **Featured card example:**
 ```html
-<img src="assets/credentials/tswm-company-license.jpg"
+<img src="assets/credentials/georgia-biohazard-readiness.jpg"
      class="credential-featured-img"
-     alt="Georgia Trauma Scene Waste Management Company License"
+     alt="Georgia trauma scene and biohazard cleanup readiness"
      width="90" height="90">
 ```
 

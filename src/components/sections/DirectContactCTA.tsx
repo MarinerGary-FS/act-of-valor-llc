@@ -114,7 +114,7 @@ export default function DirectContactCTA() {
             <div className="mb-6 inline-flex items-center gap-2 self-start rounded-full border border-[var(--color-brand-primary)] bg-[var(--color-brand-primary)]/10 px-3 py-1.5">
               <span className="inline-block h-2 w-2 rounded-full bg-[var(--color-brand-primary)] animate-pulse" />
               <span className="text-xs font-semibold uppercase tracking-wider text-[var(--color-brand-primary)]">
-                24/7 Same-Day Response
+                24/7 Emergency Calls
               </span>
             </div>
 
@@ -122,8 +122,8 @@ export default function DirectContactCTA() {
               Reach {SITE.name} in seconds
             </h3>
             <p className="text-base text-[var(--color-content-secondary)] mb-8">
-              Tap a button below to call or email the team directly. We respond
-              fastest by phone for active emergencies.
+              Tap a button below to call or email the team directly. Phone is
+              best for active cleanup needs.
             </p>
 
             <div className="space-y-4">

@@ -29,13 +29,19 @@ export default function Credentials() {
             variants={fadeUp}
             className="mb-4 text-3xl sm:text-4xl lg:text-5xl font-bold text-[var(--color-navy)]"
           >
-            Cobb County Crime Scene Cleanup Services
+            Georgia Trauma &amp; Biohazard Cleanup Readiness
           </motion.h2>
           <motion.p
             variants={fadeUp}
             className="mx-auto max-w-2xl text-lg text-[var(--color-content-secondary)]"
           >
-            Every license. Every certification. Our team is fully credentialed by industry-leading organizations for trauma scene waste management, biohazard remediation, and restoration across Georgia.
+            Image-backed credential documentation for restoration, safety, and property expertise, with Georgia-licensed biohazard positioning and additional documentation available upon request.
+          </motion.p>
+          <motion.p
+            variants={fadeUp}
+            className="mx-auto mt-4 max-w-2xl text-sm font-semibold text-[var(--color-content-primary)]"
+          >
+            Credential documentation available upon request.
           </motion.p>
         </div>
 
@@ -85,7 +91,7 @@ export default function Credentials() {
         {/* Regular Credentials Grid */}
         {regularCredentials.length > 0 && (
           <motion.div
-            className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6"
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
             variants={staggerContainer}
             initial="hidden"
             whileInView="visible"
@@ -106,10 +112,10 @@ export default function Credentials() {
                     className="object-contain w-full h-full"
                   />
                 </div>
-                <h3 className="text-sm sm:text-base font-bold text-[var(--color-navy)] mb-1 line-clamp-2">
+                <h3 className="text-sm sm:text-base font-bold text-[var(--color-navy)] mb-2">
                   {cred.name}
                 </h3>
-                <p className="text-xs sm:text-sm text-[var(--color-content-secondary)] line-clamp-2">
+                <p className="text-xs sm:text-sm leading-5 text-[var(--color-content-secondary)]">
                   {cred.org}
                 </p>
                 <div className="absolute top-0 left-0 right-0 h-0.5 bg-[var(--color-brand-primary)] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />

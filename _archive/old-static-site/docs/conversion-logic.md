@@ -56,10 +56,10 @@ CTA must appear in the following locations:
 ## CTA DESIGN PRIORITY
 
 Primary CTA:
-Call Now — Immediate Help
+Call Act of Valor
 
 Secondary CTA:
-Request Same-Day Service
+Request Help
 
 Rules:
 - Primary CTA must always visually dominate

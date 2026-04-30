@@ -25,7 +25,7 @@ Target keywords must be naturally integrated into headings, content, and metadat
 
 ## SECONDARY KEYWORDS
 
-- Same-Day Mold Removal Atlanta
+- Mold Removal Atlanta
 - Emergency Water Extraction Atlanta
 - Crime Scene Cleanup Atlanta
 - Flood Damage Repair Atlanta

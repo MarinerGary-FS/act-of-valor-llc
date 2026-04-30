@@ -95,7 +95,7 @@ export default function LocationPage({
           >
             <span className="inline-block h-2 w-2 rounded-full bg-[var(--color-brand-primary)] animate-pulse" />
             <span className="text-sm font-medium text-[var(--color-brand-primary)]">
-              Available 24/7 — Same-Day Response
+              Emergency Cleanup Support
             </span>
           </motion.div>
 
@@ -128,13 +128,13 @@ export default function LocationPage({
               href="/#contact"
               className="inline-flex items-center justify-center px-8 py-4 bg-[var(--color-brand-primary)] hover:bg-[var(--color-brand-primary-hover)] text-[var(--color-navy)] font-bold rounded-lg transition-colors duration-200 text-base sm:text-lg"
             >
-              Request Immediate Help
+              Request Help
             </Link>
             <a
               href={SITE.phoneHref}
               className="inline-flex items-center justify-center px-8 py-4 border-2 border-[var(--color-content-inverse)] hover:bg-[var(--color-content-inverse)] hover:text-[var(--color-navy)] text-[var(--color-content-inverse)] font-bold rounded-lg transition-colors duration-200"
             >
-              Call Now — Immediate Response
+              Call Act of Valor
             </a>
           </motion.div>
         </motion.div>
@@ -160,7 +160,7 @@ export default function LocationPage({
               variants={fadeUp}
               className="mx-auto max-w-2xl text-lg text-[var(--color-content-secondary)]"
             >
-              IICRC-aligned restoration, Georgia-licensed trauma scene waste management, and same-day emergency response for {locationName} residents and businesses.
+              IICRC-aligned restoration, Georgia-licensed trauma scene and biohazard cleanup support, and professional documentation for {locationName} residents and businesses.
             </motion.p>
           </div>
 
@@ -203,7 +203,7 @@ export default function LocationPage({
               Neighborhoods &amp; Communities We Serve in {locationName}
             </h2>
             <p className="mb-6 text-[var(--color-content-secondary)]">
-              Same-day emergency response across {locationName} and surrounding communities.
+              Cleanup support for {locationName} and surrounding communities.
             </p>
             <ul className="flex flex-wrap justify-center gap-2">
               {neighborhoods.map((hood) => (
@@ -232,24 +232,24 @@ export default function LocationPage({
             Need Emergency Restoration in {locationName}?
           </h2>
           <p className="text-base sm:text-lg text-white/70 mb-8 sm:mb-10">
-            Our certified team is standing by for same-day response across {locationName}.
+            Our certified team is available to discuss cleanup needs across {locationName}.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center">
             <Link
               href="/#contact"
               className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 bg-[var(--color-brand-primary)] text-[var(--color-navy)] font-bold text-base sm:text-lg rounded-lg hover:bg-[var(--color-brand-primary-hover)] transition-colors duration-300 whitespace-nowrap"
             >
-              Request Immediate Help
+              Request Help
             </Link>
             <a
               href={SITE.phoneHref}
               className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 border-2 border-[var(--color-content-inverse)] text-[var(--color-content-inverse)] font-bold text-base sm:text-lg rounded-lg hover:bg-[var(--color-content-inverse)] hover:text-[var(--color-navy)] transition-colors duration-300 whitespace-nowrap"
             >
-              Call Now — Immediate Response
+              Call Act of Valor
             </a>
           </div>
           <p className="mt-6 text-sm text-[var(--color-brand-primary)] font-medium">
-            Same-Day Emergency Cleanup Available in {locationName}
+            Emergency cleanup support available in {locationName}
           </p>
         </motion.div>
       </section>

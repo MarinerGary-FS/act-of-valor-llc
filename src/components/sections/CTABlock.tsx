@@ -44,20 +44,20 @@ export default function CTABlock({
             href="#contact"
             className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 bg-[var(--color-brand-primary)] text-[var(--color-navy)] font-bold text-base sm:text-lg rounded-lg hover:bg-[var(--color-brand-primary-hover)] transition-colors duration-300 whitespace-nowrap"
           >
-            Request Immediate Help
+            Request Help
           </a>
           {/* Secondary CTA — phone fallback */}
           <a
             href={SITE.phoneHref}
             className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 border-2 border-[var(--color-content-inverse)] text-[var(--color-content-inverse)] font-bold text-base sm:text-lg rounded-lg hover:bg-[var(--color-content-inverse)] hover:text-[var(--color-navy)] transition-colors duration-300 whitespace-nowrap"
           >
-            Call Now — Immediate Response
+            Call Act of Valor
           </a>
         </div>
 
         {/* Urgency microcopy */}
         <p className="mt-6 text-sm text-[var(--color-brand-primary)] font-medium">
-          Same-Day Emergency Cleanup Available
+          Emergency cleanup support available
         </p>
       </motion.div>
     </section>

@@ -6,8 +6,8 @@ import { fadeUp, staggerContainer } from '@/lib/motion';
 export default function TrustSection() {
   const trustItems = [
     'Compassionate approach',
-    'Trusted by law enforcement',
-    'Same-day response',
+    'Trusted by families and property managers',
+    'Emergency cleanup calls answered',
     'Licensed and certified',
   ];
 
@@ -15,7 +15,7 @@ export default function TrustSection() {
     { value: '24/7', label: 'Always available' },
     { value: '4', label: 'Core services' },
     { value: '5+', label: 'Metro areas' },
-    { value: 'Same Day', label: 'Response' },
+    { value: 'Metro', label: 'Atlanta coverage' },
   ];
 
   return (
@@ -37,7 +37,7 @@ export default function TrustSection() {
             </div>
 
             <h2 className="mb-6 text-3xl sm:text-4xl lg:text-5xl font-bold text-[var(--color-navy)]">
-              Same-Day Trauma &amp; Water Damage Response in Georgia
+              Trauma &amp; Water Damage Cleanup Support in Georgia
             </h2>
 
             <p className="mb-8 text-lg sm:text-xl italic text-[var(--color-content-secondary)]">

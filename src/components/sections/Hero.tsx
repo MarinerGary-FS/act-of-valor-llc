@@ -36,7 +36,7 @@ export default function Hero() {
         >
           <span className="inline-block h-2 w-2 rounded-full bg-[var(--color-brand-primary)] animate-pulse" />
           <span className="text-sm font-medium text-[var(--color-brand-primary)]">
-            Available 24/7 — Same-Day Response
+            Available 24/7 for Emergency Cleanup Calls
           </span>
         </motion.div>
 
@@ -54,7 +54,7 @@ export default function Hero() {
           variants={fadeUpHero}
           className="mb-8 text-lg sm:text-xl text-gray-200"
         >
-          Same-day water, fire, microbial &amp; trauma restoration across Cobb County and the Atlanta metro area.
+          Water, fire, microbial &amp; trauma restoration support across Cobb County and the Atlanta metro area.
         </motion.p>
 
         {/* IICRC Authority Line */}
@@ -77,7 +77,7 @@ export default function Hero() {
               clipRule="evenodd"
             />
           </svg>
-          <span>Licensed. Certified. Trusted by families, property managers, and law enforcement partners.</span>
+          <span>Licensed. Certified. Trusted by families, property managers, and businesses.</span>
         </motion.div>
 
         {/* CTA Group — Primary routes to form, secondary to phone */}
@@ -89,13 +89,13 @@ export default function Hero() {
             href="#contact"
             className="inline-flex items-center justify-center px-8 py-4 bg-[var(--color-brand-primary)] hover:bg-[var(--color-brand-primary-hover)] text-[var(--color-navy)] font-bold rounded-lg transition-colors duration-200 text-base sm:text-lg"
           >
-            Request Immediate Help
+            Request Help
           </a>
           <a
             href={SITE.phoneHref}
             className="inline-flex items-center justify-center px-8 py-4 border-2 border-[var(--color-content-inverse)] hover:bg-[var(--color-content-inverse)] hover:text-[var(--color-navy)] text-[var(--color-content-inverse)] font-bold rounded-lg transition-colors duration-200"
           >
-            Call Now — Immediate Response
+            Call Act of Valor
           </a>
         </motion.div>
 
@@ -104,7 +104,7 @@ export default function Hero() {
           variants={fadeUpHero}
           className="mb-4 text-sm font-semibold text-[var(--color-brand-primary)]"
         >
-          Request Immediate Assistance — Response Within Minutes
+          Speak with a real person about the next safe step.
         </motion.p>
 
         {/* Reassurance Line */}
@@ -119,11 +119,11 @@ export default function Hero() {
         >
           <div className="space-y-1">
             <p className="text-2xl sm:text-3xl font-bold text-[var(--color-brand-primary)]">24/7</p>
-            <p className="text-xs sm:text-sm text-gray-400">Emergency Response</p>
+            <p className="text-xs sm:text-sm text-gray-400">Emergency Calls</p>
           </div>
           <div className="space-y-1">
             <p className="text-2xl sm:text-3xl font-bold text-[var(--color-brand-primary)]">Same Day</p>
-            <p className="text-xs sm:text-sm text-gray-400">Service Available</p>
+            <p className="text-xs sm:text-sm text-gray-400">Service Availability</p>
           </div>
           <div className="space-y-1">
             <p className="text-2xl sm:text-3xl font-bold text-[var(--color-brand-primary)]">Metro</p>

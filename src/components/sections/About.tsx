@@ -5,23 +5,25 @@ import { fadeUp, staggerContainer } from '@/lib/motion';
 import { SITE } from '@/lib/constants';
 
 const credentials = [
-  'Georgia Trauma Scene Waste Management Company',
+  'Licensed in the State of Georgia',
+  'Georgia Trauma Scene / Biohazard Cleanup Readiness',
   'IICRC Certified — Water, Mold, Fire, Drying',
   'Georgia Property & Casualty Adjuster',
   'Lead-Safe Renovator Certified',
   'Georgia Real Estate License',
+  'Credential Documentation Available Upon Request',
 ];
 
 const aboutText = [
   'Brian W. Miller is the founder and lead practitioner at Act of Valor, bringing over a decade of specialized expertise in emergency restoration and trauma scene management. His approach combines technical certification with genuine compassion for families in crisis.',
   'With certifications across water damage restoration, structural drying, microbial remediation, fire and smoke recovery, and trauma scene restoration, Brian ensures every project meets IICRC standards while respecting the sensitive nature of each situation. His commitment to continuing education and professional development keeps Act of Valor at the forefront of restoration practices.',
-  'Trusted by law enforcement, insurance adjusters, and Atlanta-area families, Brian has built Act of Valor on the principle of immediate, professional, and compassionate response—because in a crisis, you need someone who understands both the technical work and the human impact.',
+  'Trusted by insurance professionals, property managers, and Atlanta-area families, Brian has built Act of Valor on the principle of professional, compassionate support—because in a crisis, you need someone who understands both the technical work and the human impact.',
 ];
 
 export default function About() {
   return (
     <section id="about" className="bg-[var(--color-surface-card)] py-16 sm:py-20 px-4 sm:px-6 lg:px-8">
-      {/* Authority Headline — State Licensing Positioning */}
+      {/* Authority Headline — Georgia biohazard positioning */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -36,10 +38,10 @@ export default function About() {
           </span>
         </div>
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[var(--color-navy)] leading-tight">
-          Georgia Trauma Scene Waste Management Company
+          Georgia-Licensed Trauma Scene, Biohazard &amp; Restoration Support
         </h2>
         <p className="mt-3 max-w-2xl mx-auto text-base text-[var(--color-content-secondary)]">
-          Fully licensed by the State of Georgia for trauma scene waste management — authorized for certified biohazard handling, disposal, and remediation operations statewide.
+          Act of Valor provides state-licensed, Georgia-focused trauma scene, biohazard, and restoration support with credential documentation available upon request. We do not publish unverified license numbers or imply government affiliation.
         </p>
       </motion.div>
 
@@ -109,13 +111,13 @@ export default function About() {
               href="#contact"
               className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 bg-[var(--color-navy)] text-[var(--color-content-inverse)] font-bold text-base sm:text-lg rounded-lg hover:opacity-90 transition-all duration-300 active:scale-95"
             >
-              Request Immediate Help
+              Request Help
             </a>
             <a
               href={SITE.phoneHref}
               className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 border-2 border-[var(--color-navy)] text-[var(--color-navy)] font-bold text-base sm:text-lg rounded-lg hover:bg-[var(--color-navy)] hover:text-[var(--color-content-inverse)] transition-all duration-300"
             >
-              Call Now — Immediate Response
+              Call Act of Valor
             </a>
           </div>
         </motion.div>

@@ -11,7 +11,7 @@ export const SITE = {
     tiktok: 'https://www.tiktok.com/@ceoglm',
   },
   serviceAreas: ['Cobb County', 'Marietta', 'Smyrna', 'Kennesaw', 'Atlanta', 'Sandy Springs', 'Douglasville', 'Buckhead'],
-  hours: '24/7 Emergency Response',
+  hours: 'Emergency Cleanup Support',
 } as const;
 
 export const SERVICES = [
@@ -137,20 +137,6 @@ export const CREDENTIALS = [
     alt: 'Rope and harness safety training certification',
     featured: false,
   },
-  {
-    name: 'TSWM Company License',
-    org: 'Texas State Water Mitigation',
-    image: '/credentials/tswm-company-license.png',
-    alt: 'Texas State Water Mitigation company license',
-    featured: false,
-  },
-  {
-    name: 'TSWM Practitioner License',
-    org: 'Texas State Water Mitigation',
-    image: '/credentials/tswm-practitioner-license.png',
-    alt: 'Texas State Water Mitigation practitioner license',
-    featured: false,
-  },
 ] as const;
 
 export const AUTHORITY_BLOCKS = [
@@ -168,11 +154,11 @@ export const AUTHORITY_BLOCKS = [
     icon: '🛡️',
     title: 'Biohazard & Trauma',
     licenses: [
-      'TCST — Trauma Crime Scene Technician',
-      'OSHA Certified',
-      'DOT Compliant — Biohazard Transport',
+      'Georgia trauma scene / biohazard cleanup readiness',
+      'OSHA bloodborne pathogens awareness',
+      'Medical waste / regulated waste vendor coordination',
     ],
-    footnote: 'Discreet, certified trauma and crime scene restoration with full regulatory handling.',
+    footnote: 'Discreet trauma and crime scene cleanup support. Credential documentation available upon request.',
   },
   {
     icon: '🔬',
@@ -271,27 +257,21 @@ export const RESOURCES = {
 
 export const SAFETY_UPDATES = [
   {
-    title: 'Severe Thunderstorm Warning for Metro Atlanta',
-    date: '2026-04-08',
-    source: 'National Weather Service',
+    title: 'When Cleanup Support May Be Needed',
+    category: 'Trauma & Biohazard',
     description:
-      'Heavy rainfall and strong winds expected this evening. Secure loose objects and prepare for potential flooding in low-lying areas.',
-    url: 'https://www.weather.gov/ffc/',
+      'After an unattended death, injury, crime scene, or hazardous contamination event, families and property managers may need trained cleanup support after authorities release the scene.',
   },
   {
-    title: 'Atlanta Water Main Break Affects Sandy Springs',
-    date: '2026-04-07',
-    source: 'Atlanta Department of Watershed Management',
+    title: 'Property Manager Awareness',
+    category: 'Buildings & Rentals',
     description:
-      'Water main break reported on Roswell Road. Residents advised to boil water and report water intrusion in basements.',
-    url: 'https://www.atlantawatershed.org/',
+      'Apartments, rentals, offices, and commercial properties can require documented cleanup, odor control, and vendor coordination before a space is returned to normal use.',
   },
   {
-    title: 'Buckhead Area Flooding Advisory',
-    date: '2026-04-06',
-    source: 'Atlanta Emergency Management',
+    title: 'Safe Next Steps',
+    category: 'Client Safety',
     description:
-      'Local flooding observed near shopping centers. Avoid driving through flooded roads. Emergency services available 24/7.',
-    url: 'https://gema.ga.gov/',
+      'Avoid direct contact with blood, bodily fluids, sewage, sharps, or unknown residues. When in doubt, keep the area secured and ask a qualified cleanup professional what documentation may be needed.',
   },
 ] as const;

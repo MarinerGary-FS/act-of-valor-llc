@@ -4,12 +4,12 @@ import LocationPage from '@/components/sections/LocationPage';
 export const metadata: Metadata = {
   title: 'Kennesaw Trauma Cleanup & Biohazard Remediation | Act of Valor',
   description:
-    'Trauma scene cleanup, biohazard remediation, water damage restoration, and fire and smoke restoration in Kennesaw, Georgia. Same-day response. Georgia-licensed. IICRC-aligned.',
+    'Trauma scene cleanup, biohazard remediation, water damage restoration, and fire and smoke restoration in Kennesaw, Georgia. Georgia-licensed. IICRC-aligned.',
   alternates: { canonical: 'https://actofvalorllc.com/kennesaw' },
   openGraph: {
     title: 'Kennesaw Trauma Cleanup & Biohazard Remediation | Act of Valor',
     description:
-      'Same-day trauma, biohazard, and restoration services in Kennesaw, GA. Georgia-licensed. IICRC-aligned.',
+      'Trauma, biohazard, and restoration services in Kennesaw, GA. Georgia-licensed. IICRC-aligned.',
     url: 'https://actofvalorllc.com/kennesaw',
     type: 'website',
   },

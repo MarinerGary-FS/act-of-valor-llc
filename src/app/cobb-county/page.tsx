@@ -4,12 +4,12 @@ import LocationPage from '@/components/sections/LocationPage';
 export const metadata: Metadata = {
   title: 'Cobb County Trauma Cleanup & Biohazard Remediation | Act of Valor',
   description:
-    'Georgia-licensed trauma scene waste management and IICRC-aligned restoration across Cobb County — same-day biohazard, water, fire, and microbial remediation in Marietta, Smyrna, Kennesaw, and nearby communities.',
+    'Georgia-licensed trauma scene and biohazard cleanup support with IICRC-aligned restoration across Cobb County — biohazard, water, fire, and microbial remediation in Marietta, Smyrna, Kennesaw, and nearby communities.',
   alternates: { canonical: 'https://actofvalorllc.com/cobb-county' },
   openGraph: {
     title: 'Cobb County Trauma Cleanup & Biohazard Remediation | Act of Valor',
     description:
-      'Same-day trauma, biohazard, and restoration services across Cobb County. Georgia-licensed. IICRC-aligned.',
+      'Trauma, biohazard, and restoration services across Cobb County. Georgia-licensed. IICRC-aligned.',
     url: 'https://actofvalorllc.com/cobb-county',
     type: 'website',
   },
@@ -21,7 +21,7 @@ export default function CobbCountyPage() {
       locationName="Cobb County"
       localityContext="Georgia"
       canonicalUrl="https://actofvalorllc.com/cobb-county"
-      intro="Same-day emergency response across Cobb County — trauma scene cleanup, biohazard remediation, water damage restoration, structural drying, microbial remediation, and fire and smoke restoration. Georgia-licensed. IICRC-aligned."
+      intro="Emergency cleanup support across Cobb County — trauma scene cleanup, biohazard remediation, water damage restoration, structural drying, microbial remediation, and fire and smoke restoration. Georgia-licensed. IICRC-aligned."
       neighborhoods={[
         'Marietta',
         'Smyrna',

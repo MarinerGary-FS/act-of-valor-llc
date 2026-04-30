@@ -15,10 +15,10 @@ They are functional conversion tools.
 
 ### Structure:
 - Headline (clear, reassuring)
-- Subtext (services + same-day response)
-- Trust line (law enforcement + community trust)
-- Primary CTA (Call Now — Immediate Help)
-- Secondary CTA (Request Same-Day Service)
+- Subtext (services + service area)
+- Trust line (family, property manager, and business trust)
+- Primary CTA (Call Act of Valor)
+- Secondary CTA (Request Help)
 
 ### Behavior:
 - CTA must be visible without scrolling
@@ -85,8 +85,8 @@ Why Atlanta Trusts Act of Valor
 - Short emotional statement
 - 3–5 trust bullets:
   - Compassion
-  - Law enforcement relationships
-  - Same-day response
+  - Family, property manager, and business trust
+  - Emergency cleanup calls answered
   - Professionalism
 
 ### Behavior:
@@ -116,22 +116,24 @@ Categorized links:
 
 ---
 
-## 6. PUBLIC SAFETY UPDATES (LOCAL RELEVANCE MODULE)
+## 6. PUBLIC SAFETY AWARENESS (LOCAL RELEVANCE MODULE)
 
 ### Title:
-Atlanta Public Safety Updates
+Atlanta Public Safety Awareness
 
 ### Structure:
-- Feed-style layout (3–5 items)
-- Title + short description + link
+- Awareness card layout (3–5 items)
+- Title + short description
+- Last updated label
 
 ### Behavior:
-- Scrollable or static list
+- Static list
 - Must not overwhelm page
 
 ### Rules:
 - Focus on Atlanta / Georgia relevance
 - Must feel credible and current
+- Must not imply government affiliation
 
 ---
 

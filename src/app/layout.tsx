@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://actofvalorllc.com"),
   title: "Trauma Cleanup & Biohazard Remediation in Cobb County, Georgia | Act of Valor",
   description:
-    "Act of Valor — Georgia Trauma Scene Waste Management Company. Same-day crime scene cleanup, biohazard remediation, water damage restoration, structural drying, and fire restoration in Cobb County and across Georgia. IICRC-aligned. Call (470) 881-9911.",
+    "Act of Valor — Georgia-licensed trauma scene and biohazard cleanup support. Crime scene cleanup, biohazard remediation, water damage restoration, structural drying, and fire restoration in Cobb County and across Georgia. IICRC-aligned. Call (470) 881-9911.",
   keywords: [
     "cobb county trauma cleanup",
     "crime scene cleanup cobb county",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Act of Valor — Trauma Cleanup & Biohazard Remediation in Cobb County, Georgia",
     description:
-      "Georgia Trauma Scene Waste Management Company. Same-day crime scene cleanup, biohazard remediation, and water damage restoration across Cobb County. Call now.",
+      "Georgia-licensed trauma scene and biohazard cleanup support, biohazard remediation, and water damage restoration across Cobb County. Call now.",
     type: "website",
     url: "https://actofvalorllc.com",
     locale: "en_US",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Act of Valor — Trauma & Biohazard Remediation Cobb County",
     description:
-      "Georgia-licensed trauma scene waste management. Same-day biohazard, water, fire, and microbial remediation across Cobb County and the Atlanta metro.",
+      "Georgia-licensed trauma scene and biohazard cleanup support, water, fire, and microbial remediation across Cobb County and the Atlanta metro.",
   },
 };
 
@@ -158,10 +158,10 @@ export default function RootLayout({
               mainEntity: [
                 {
                   "@type": "Question",
-                  name: "Do you offer same-day water damage restoration in Atlanta?",
+                  name: "Do you offer water damage restoration in Atlanta?",
                   acceptedAnswer: {
                     "@type": "Answer",
-                    text: "Yes. Act of Valor provides same-day water damage restoration and structural drying across Atlanta and the surrounding metro area including Sandy Springs, Marietta, Douglasville, and Buckhead.",
+                    text: "Yes. Act of Valor provides water damage restoration and structural drying across Atlanta and the surrounding metro area including Sandy Springs, Marietta, Douglasville, and Buckhead.",
                   },
                 },
                 {
@@ -169,7 +169,7 @@ export default function RootLayout({
                   name: "Do you handle trauma and crime scene restoration?",
                   acceptedAnswer: {
                     "@type": "Answer",
-                    text: "Yes. We provide discreet, certified trauma and crime scene restoration services. We work closely with law enforcement and local professionals with full OSHA and DOT compliance.",
+                    text: "Yes. We provide discreet, Georgia-licensed trauma and crime scene restoration support for families, property managers, and businesses, with credential documentation available upon request.",
                   },
                 },
                 {
